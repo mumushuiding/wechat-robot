@@ -1,0 +1,19 @@
+{
+  "roomList": [
+    {
+      "_events": {},
+      "_eventsCount": 0,
+      "id": "20080835859@chatroom",
+      "payload": {
+        "adminIdList": ["wxid_zqptk9a2wmwo21"],
+        "avatar": "http://wx.qlogo.cn/mmcrhead/nibxxlib1VaPej12gFTTynuhJvruYxtJpPLj7eVGEMf22mxam7bnd7DSJTCg73J9cRia1kylGz8KPlDt3iamZun39icKxxEr4I8sD/0",
+        "id": "20080835859@chatroom",
+        "memberIdList": ["wxid_zqptk9a2wmwo21", "wxid_7iamaquxeufz22"],
+        "ownerId": "wxid_zqptk9a2wmwo21",
+        "topic": "测试群"
+      }
+    }
+  ],
+  "create_time": 1648180171,
+  "expire_time": 2592000
+}

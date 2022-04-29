@@ -1,0 +1,48 @@
+{
+  "roomList": [
+    {
+      "_events": {},
+      "_eventsCount": 0,
+      "id": "21266696125@chatroom",
+      "payload": {
+        "adminIdList": ["wxid_zqptk9a2wmwo21", "chenjunh_8512"],
+        "avatar": "",
+        "id": "21266696125@chatroom",
+        "memberIdList": [
+          "chenjunh_8512",
+          "bingzhihuiyi",
+          "wxid_j9rqfbqs1c3y21",
+          "wxid_zqptk9a2wmwo21",
+          "wxid_t5nt5mt0goho21",
+          "wxid_ket03ig8jylc21",
+          "wxid_5527455274412",
+          "wxid_e19o8dir98kx22",
+          "amazingch",
+          "wxid_rd3nm7sziwmy22",
+          "wxid_1550505505012",
+          "wxid_y1owbbxlyvjk41",
+          "ququ088695",
+          "wxid_qi8par1vctuj31",
+          "wxid_0qkzf05moejk21",
+          "landy53988",
+          "O_O226038",
+          "wxid_ald3ueinbtag22",
+          "wxid_mjtyh3057j6221",
+          "wxid_szx47rwlc1c521",
+          "wxid_0m6ssa4xggy722",
+          "wxid_v5ba6p2cwptg22",
+          "wxid_h1nf8cttgfbf22",
+          "a289878371",
+          "wxid_qsu79yhsbpzz12",
+          "wxid_t820esmhpul231",
+          "wxid_sx5huk3mqory12",
+          "wxid_c4qfv4nq2pfg12"
+        ],
+        "ownerId": "wxid_zqptk9a2wmwo21",
+        "topic": "订场群"
+      }
+    }
+  ],
+  "create_time": 1648178729,
+  "expire_time": 2592000
+}

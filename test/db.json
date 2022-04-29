@@ -1,0 +1,3527 @@
+{
+  "divers": [
+    {
+      "room": "福州羽毛球健身群",
+      "talks": [
+        {
+          "wxid": "wxid_zqptk9a2wmwo21",
+          "talk": 26,
+          "attend": 0,
+          "create": 2,
+          "active": 126,
+          "wxname": "林汀"
+        },
+        {
+          "wxid": "wxid_zayomyp5vou322",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "豆豆不逗"
+        },
+        {
+          "wxid": "wxid_xk24pz058wzw21",
+          "talk": 17,
+          "attend": 0,
+          "create": 0,
+          "active": 17,
+          "wxname": "业余e—晋安-廖神小迷弟无殊"
+        },
+        {
+          "wxid": "wxid_1550505505012",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "Su"
+        },
+        {
+          "wxid": "frosty_47",
+          "talk": 10,
+          "attend": 0,
+          "create": 0,
+          "active": 10,
+          "wxname": "业余3.5-台江-唉斧"
+        },
+        {
+          "wxid": "chenjunh_8512",
+          "talk": 4,
+          "attend": 0,
+          "create": 1,
+          "active": 54,
+          "wxname": "浮云泪痕"
+        },
+        {
+          "wxid": "wxid_mjtyh3057j6221",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "迟墨"
+        },
+        {
+          "wxid": "wxid_szx47rwlc1c521",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "动次打次"
+        },
+        {
+          "wxid": "wxid_im47zpq8cnzq21",
+          "talk": 3,
+          "attend": 0,
+          "create": 1,
+          "active": 53,
+          "wxname": "吴翊"
+        },
+        {
+          "wxid": "wxid_5527455274412",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "郭晨光"
+        },
+        {
+          "wxid": "bingzhihuiyi",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "Fyang"
+        },
+        {
+          "wxid": "wxid_ald3ueinbtag22",
+          "talk": 5,
+          "attend": 1,
+          "create": 0,
+          "active": 25,
+          "wxname": "拂晓"
+        },
+        {
+          "wxid": "wxid_q2rt04jy6sbf21",
+          "talk": 12,
+          "attend": 0,
+          "create": 0,
+          "active": 12,
+          "wxname": "啊和"
+        },
+        {
+          "wxid": "wxid_6bnnw59bk2vc22",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "洛特星人"
+        },
+        {
+          "wxid": "wxid_xboeosvqerw812",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "天天"
+        },
+        {
+          "wxid": "wxid_0m6ssa4xggy722",
+          "talk": 32,
+          "attend": 0,
+          "create": 1,
+          "active": 82,
+          "wxname": "业余3 闽侯 江一刀"
+        },
+        {
+          "wxid": "wxid_h1nf8cttgfbf22",
+          "talk": 3,
+          "attend": 0,
+          "create": 0,
+          "active": 3,
+          "wxname": "-Fxy-"
+        },
+        {
+          "wxid": "wxid_15a5bewiykmi12",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "邓bling"
+        },
+        {
+          "wxid": "wxid_ket03ig8jylc21",
+          "talk": 14,
+          "attend": 0,
+          "create": 1,
+          "active": 64,
+          "wxname": "业余2-台江-普洱"
+        },
+        {
+          "wxid": "wxid_zizagta3vdpq21",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "益梅"
+        },
+        {
+          "wxid": "thaighter",
+          "talk": 9,
+          "attend": 0,
+          "create": 0,
+          "active": 9,
+          "wxname": "业余LimX→1-晋安-阿飞"
+        },
+        {
+          "wxid": "wxid_t5nt5mt0goho21",
+          "talk": 7,
+          "attend": 0,
+          "create": 1,
+          "active": 57,
+          "wxname": "业余2台江区凌雨天空"
+        },
+        {
+          "wxid": "hebe12288",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "HEBE12288"
+        },
+        {
+          "wxid": "wxid_sx5huk3mqory12",
+          "talk": 8,
+          "attend": 0,
+          "create": 1,
+          "active": 58,
+          "wxname": "阿甘"
+        },
+        {
+          "wxid": "wxid_e19o8dir98kx22",
+          "talk": 12,
+          "attend": 1,
+          "create": 0,
+          "active": 32,
+          "wxname": "业余2-仓山  曹达华"
+        },
+        {
+          "wxid": "wxid_c4qfv4nq2pfg12",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "屿鹿"
+        },
+        {
+          "wxid": "wxid_phm8srdwgwhf12",
+          "talk": 4,
+          "attend": 0,
+          "create": 1,
+          "active": 54,
+          "wxname": "小钰"
+        },
+        {
+          "wxid": "wxid_n1bm9f2ep2x122",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余3-马尾-巴德"
+        },
+        {
+          "wxid": "kaximu412158",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余-台江-陈洲洋"
+        },
+        {
+          "wxid": "jianwen629076",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "ThatBoy"
+        },
+        {
+          "wxid": "wxid_3p2rdff761or21",
+          "talk": 35,
+          "attend": 0,
+          "create": 1,
+          "active": 85,
+          "wxname": "业余2.01-鼓楼-歌"
+        },
+        {
+          "wxid": "css1012css",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "口袋"
+        },
+        {
+          "wxid": "wxid_0qkzf05moejk21",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "828"
+        },
+        {
+          "wxid": "wxid_t7b0i50ko7fd22",
+          "talk": 4,
+          "attend": 0,
+          "create": 1,
+          "active": 54,
+          "wxname": "Yu."
+        },
+        {
+          "wxid": "wxid_x0sth1pl8yso22",
+          "talk": 5,
+          "attend": 0,
+          "create": 0,
+          "active": 5,
+          "wxname": "陈"
+        },
+        {
+          "wxid": "wxid_y1owbbxlyvjk41",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "熙熙🍅"
+        },
+        {
+          "wxid": "wxid_epcnwu8ua2dr22",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "哈哈哈哈呃"
+        },
+        {
+          "wxid": "wxid_un5ljspn961w22",
+          "talk": 2,
+          "attend": 0,
+          "create": 1,
+          "active": 52,
+          "wxname": "Lcy"
+        },
+        {
+          "wxid": "wxid_1564165643011",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_b3qoghazkuoa22",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "晴天小恐龙"
+        },
+        {
+          "wxid": "wxid_rd3nm7sziwmy22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_h0rg3ldxynk622",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_rz3pvmpoi50n12",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_0avczmf7ap0322",
+          "talk": 13,
+          "attend": 0,
+          "create": 1,
+          "active": 63,
+          "wxname": "ㅤ"
+        },
+        {
+          "wxid": "wxid_fyfrcvoyza6t21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_0gxbimdgjb9u31",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "DayleHebe",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "D.h"
+        },
+        {
+          "wxid": "wxid_mcdlo5sk2g4k22",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "业余3-鼓楼-何帆"
+        },
+        {
+          "wxid": "qq702250896",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_r5e4z8qg6no41",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "chenhuajin6876",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_v8l3tb9wzjkg22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_m6ka1x5pwirl22",
+          "talk": 9,
+          "attend": 0,
+          "create": 0,
+          "active": 9,
+          "wxname": "业余1.3-仓山-阿蛋"
+        },
+        {
+          "wxid": "wxid_wr4huwlygayu21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "as1354077956",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "q707783933",
+          "talk": 8,
+          "attend": 1,
+          "create": 0,
+          "active": 28,
+          "wxname": "业余3-文化宫-米亚"
+        },
+        {
+          "wxid": "wxid_wgt2k4pyiwam21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "chenwanxing",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "linyan4169",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_oubovyps0dw822",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "张球游（业余3）"
+        },
+        {
+          "wxid": "wxid_6386313864812",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_ritpc55gheil21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wy249900520",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "wy"
+        },
+        {
+          "wxid": "wxid_nfaju7om3md121",
+          "talk": 22,
+          "attend": 0,
+          "create": 0,
+          "active": 22,
+          "wxname": "业余3.8729-鼓楼-文刀刀"
+        },
+        {
+          "wxid": "wxid_xoqmqpdzk78l22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_znh7st0ygob622",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余2.9级-鼓楼-碌卡"
+        },
+        {
+          "wxid": "wuhongfu",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_9g3g2pvbl9or21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_56bbca8pgsde21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "shengt",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "pqyuse",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "qq524866605",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_q4ko75vlt5kn21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_8735427356013",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_fy36g6asril222",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_kqirahd16eh222",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "chenruo3935",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余2-鼓楼-若"
+        },
+        {
+          "wxid": "wxid_0hywvsjw7a8i22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_x8n6d1iaqty022",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "子鼠安康"
+        },
+        {
+          "wxid": "wxid_3ixkmvws8iuj22",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "凛风"
+        },
+        {
+          "wxid": "wxid_dyibw0bmol8y22",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余0-仓山-糖糖"
+        },
+        {
+          "wxid": "X11LOVE",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余1-仓山-大西瓜"
+        },
+        {
+          "wxid": "wxid_z7tuuzkjmnmv21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_kdwq95yj2jio22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_2304533009012",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_uw5tltktjfml22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "poxiaochenxing",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "破晓晨星《黑铁订制》"
+        },
+        {
+          "wxid": "wxid_rj7g427hk79a21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_mtsyjx17t17z12",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "zone1101",
+          "talk": 19,
+          "attend": 0,
+          "create": 0,
+          "active": 19,
+          "wxname": "业余0.88级zone"
+        },
+        {
+          "wxid": "huanglu6777",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "q1126314767",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "ZZhangZJ"
+        },
+        {
+          "wxid": "wxid_gd6y4m1il9or52",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_50s4ziswu7dy22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_nzyp0oc3azum22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "xuyu28629294",
+          "talk": 4,
+          "attend": 1,
+          "create": 0,
+          "active": 24,
+          "wxname": "业余2-台江-老友"
+        },
+        {
+          "wxid": "wxid_rwwibtbamwn721",
+          "talk": 9,
+          "attend": 0,
+          "create": 1,
+          "active": 59,
+          "wxname": "花花的栖息地"
+        },
+        {
+          "wxid": "wxid_jhuwp6qq59fg21",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "廖桥淯"
+        },
+        {
+          "wxid": "wxid_knnf231hhqsu22",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余0.1级—台江—Hong"
+        },
+        {
+          "wxid": "wxid_2eioua8mbb9r22",
+          "talk": 7,
+          "attend": 0,
+          "create": 0,
+          "active": 7,
+          "wxname": "业务-1-猪队友"
+        },
+        {
+          "wxid": "wxid_63apjxbvf4zq22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_36rvafavofil22",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "阿源"
+        },
+        {
+          "wxid": "linqinglan477802344",
+          "talk": 20,
+          "attend": 1,
+          "create": 1,
+          "active": 90,
+          "wxname": "饼干"
+        },
+        {
+          "wxid": "wxid_y74602aoq8rl22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_mfyu3vradyv222",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_qjhv6cq4ikvc22",
+          "talk": 10,
+          "attend": 1,
+          "create": 0,
+          "active": 30,
+          "wxname": "mzh"
+        },
+        {
+          "wxid": "whypinga",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "qq1186403906",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_2218292207412",
+          "talk": 8,
+          "attend": 0,
+          "create": 0,
+          "active": 8,
+          "wxname": "业余0.38-仓山-绪风"
+        },
+        {
+          "wxid": "wxid_t820esmhpul231",
+          "talk": 3,
+          "attend": 0,
+          "create": 0,
+          "active": 3,
+          "wxname": "丸子胡了"
+        },
+        {
+          "wxid": "wxid_ecfmdx4gigug22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_2576475755212",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_41r7io6fm7ya22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_v5ba6p2cwptg22",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "陈婕"
+        },
+        {
+          "wxid": "wxid_bg1f84m6k4e721",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "Faded"
+        },
+        {
+          "wxid": "wxid_d0c471fjer0q22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_bvvapdazqkb912",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "业余 0.2 晋安 xT、"
+        },
+        {
+          "wxid": "wxid_ynx9rdc70dp22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_hgcpmq1bqykw22",
+          "talk": 5,
+          "attend": 0,
+          "create": 1,
+          "active": 55,
+          "wxname": "L"
+        },
+        {
+          "wxid": "wxid_oqypgxlj2zxu21",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "梓卿"
+        },
+        {
+          "wxid": "caocao41",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_2skwuk2odx3422",
+          "talk": 100,
+          "attend": 1,
+          "create": 0,
+          "active": 120,
+          "wxname": "业余0.8–台江–嘘"
+        },
+        {
+          "wxid": "wkr789",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_f64gk6d8por522",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wyuxin1994",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "lw4304964",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余2级−晋安－水水"
+        },
+        {
+          "wxid": "wxid_rl1fkvsz9wkt22",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "业余中的业余-闽侯-瓜"
+        },
+        {
+          "wxid": "shiqihongbushiqihong",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_3kwxzwhffyog11",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_3f5f97gsof1621",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "lin90314",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "chenshisheng417773",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "业务3-仓山-大俊"
+        },
+        {
+          "wxid": "wxid_uek3cvyabeqw21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_ru44bkqobiek22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_3hmkmh2icone22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_1i5peryoe6xy22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wangyi1051156346",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_fiec4ej1o0s822",
+          "talk": 29,
+          "attend": 0,
+          "create": 1,
+          "active": 79,
+          "wxname": "业余1-台江-关耳"
+        },
+        {
+          "wxid": "wxid_wk6b99xf4wnr22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_8hefwyd6fcwp22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_qsu79yhsbpzz12",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "sunshinec13",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "艺"
+        },
+        {
+          "wxid": "Sunny97",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "lftm1111",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_zwi660spbx0j22",
+          "talk": 3,
+          "attend": 1,
+          "create": 0,
+          "active": 23,
+          "wxname": "阿易"
+        },
+        {
+          "wxid": "wxid_4k2tr56b46wi21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_bex926rjg50722",
+          "talk": 4,
+          "attend": 1,
+          "create": 0,
+          "active": 24,
+          "wxname": "业余2台江蘑菇"
+        },
+        {
+          "wxid": "wxid_64oeq9cuwafn21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_r8llmz6w9nvf22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_6h42xzjbh1bg21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_jx8yl86lvrcs22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_4918649187712",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "小小亮"
+        },
+        {
+          "wxid": "wanzai456",
+          "talk": 4,
+          "attend": 1,
+          "create": 0,
+          "active": 24,
+          "wxname": "业余2级-仓山-遇见"
+        },
+        {
+          "wxid": "wxid_hyxbv3xdp2t722",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_4l69knddwl0j11",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "名字取太长的话我会一直很开心"
+        },
+        {
+          "wxid": "wxid_sysujop5ju2821",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "achenghero",
+          "talk": 4,
+          "attend": 1,
+          "create": 0,
+          "active": 24,
+          "wxname": "业余3级-仓山-老徐"
+        },
+        {
+          "wxid": "wxid_hgmbdlxt3gb621",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_4vj4c770m1z312",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_zpz7nmavx6sb22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_58zwlbe9ll0g22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "baiyuling888",
+          "talk": 7,
+          "attend": 0,
+          "create": 0,
+          "active": 7,
+          "wxname": "业余两级  白龙"
+        },
+        {
+          "wxid": "ZYR774685318",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_kyv6660gsweg22",
+          "talk": 7,
+          "attend": 0,
+          "create": 0,
+          "active": 7,
+          "wxname": "嘻嘻嘻"
+        },
+        {
+          "wxid": "zhengshanyan002",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_b2anoag3nsqz22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_4sykw09z9tj721",
+          "talk": 2,
+          "attend": 1,
+          "create": 0,
+          "active": 22,
+          "wxname": "业余1-文化宫-葡萄月令"
+        },
+        {
+          "wxid": "yxyznz",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "suqin740092",
+          "talk": 20,
+          "attend": 1,
+          "create": 0,
+          "active": 40,
+          "wxname": "业余7-晋安-yyy"
+        },
+        {
+          "wxid": "wxid_4yy94rpyfyqc21",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余1.99-鼓楼-努力"
+        },
+        {
+          "wxid": "wxid_6rpaie99qqqm22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_pw1l47d3merf21",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "箴箴"
+        },
+        {
+          "wxid": "wxid_xbedz1pvgh8y21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_4244372445912",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "bobo-keith",
+          "talk": 3,
+          "attend": 0,
+          "create": 0,
+          "active": 3,
+          "wxname": "业余2级-晋安-小萝卜"
+        },
+        {
+          "wxid": "wxid_8725987258614",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_c9dt7my50pnh22",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "业余3-闽侯-小温"
+        },
+        {
+          "wxid": "wxid_c9dt7my50pnh22",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "业余3-闽侯-小温"
+        },
+        {
+          "wxid": "wxid_ql12t3pmpg8e22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_cey0gkwjt2hs21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_6277882779111",
+          "talk": 14,
+          "attend": 0,
+          "create": 1,
+          "active": 64,
+          "wxname": "A华骏福特张英勇"
+        },
+        {
+          "wxid": "wxid_6jrfjg5ftlp312",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "kaola202259",
+          "talk": 3,
+          "attend": 1,
+          "create": 0,
+          "active": 23,
+          "wxname": "Zeratul"
+        },
+        {
+          "wxid": "wxid_x37zcs0ttzbp21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_rzz0v0xw1eqp22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "bjy1528",
+          "talk": 47,
+          "attend": 0,
+          "create": 0,
+          "active": 47,
+          "wxname": "专业0级-省体-鸡饲料"
+        },
+        {
+          "wxid": "wxid_i0exhsa4ecdl22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "bigbenzema",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_dupcrrrb4f6222",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_rna2851x9ex122",
+          "talk": 38,
+          "attend": 0,
+          "create": 1,
+          "active": 88,
+          "wxname": "业余0.49级—鼓楼—A"
+        },
+        {
+          "wxid": "wxid_5789477894522",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "qq927932688",
+          "talk": 8,
+          "attend": 0,
+          "create": 0,
+          "active": 8,
+          "wxname": "业余0-省体－🌸🌸"
+        },
+        {
+          "wxid": "hylball",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "Hyluck"
+        },
+        {
+          "wxid": "XYZE43215577",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "woaixiayutian2011",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_1273772737712",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "binbin908317",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_z5zg36b85edb21",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余1-仓山-肥佬"
+        },
+        {
+          "wxid": "wxid_owvdepranxsr22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_mxixyo8img2m22",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余三级--台江--杨锴"
+        },
+        {
+          "wxid": "wq308340755",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余—台江—King庆"
+        },
+        {
+          "wxid": "amazingch",
+          "talk": 2,
+          "attend": 1,
+          "create": 0,
+          "active": 22,
+          "wxname": "7"
+        },
+        {
+          "wxid": "wxid_mfqlef6xagrv21",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余新手  ~尤"
+        },
+        {
+          "wxid": "wxid_6hi9lv1ky1qj22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_i562v9bn97jx22",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余0-奥体-小小生"
+        },
+        {
+          "wxid": "wxid_wq94oyyqz9xe21",
+          "talk": 6,
+          "attend": 1,
+          "create": 0,
+          "active": 26,
+          "wxname": "刘. sir"
+        },
+        {
+          "wxid": "wxid_mg9ejbly297m21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_h3o3b2i2mowv22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "tertius0323",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_1628946288512",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_6slopx8fi37511",
+          "talk": 3,
+          "attend": 0,
+          "create": 0,
+          "active": 3,
+          "wxname": "Peter 韩🏸"
+        },
+        {
+          "wxid": "wxid_9ilynxgxwp8422",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_5ssxm0bk43y422",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "a312059476",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "业余3--梧桐·树"
+        },
+        {
+          "wxid": "wxid_9bu59jg8s0lm12",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "醉里挑灯看剑"
+        },
+        {
+          "wxid": "poem-love",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "daihailian001",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_chrb7wpe6npq22",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "森林木"
+        },
+        {
+          "wxid": "wxid_4571465714312",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "业余3-台江-吴歌"
+        },
+        {
+          "wxid": "wxid_o0qmqms9tvml22",
+          "talk": 3,
+          "attend": 0,
+          "create": 0,
+          "active": 3,
+          "wxname": "业余0.01-鼓楼-炸药"
+        },
+        {
+          "wxid": "wxid_kf7txiyc35mf22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "john044669",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_nqxzgf6epg9k21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_45vqug8dgpwb21",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "新手-台江-柳盏盏"
+        },
+        {
+          "wxid": "wxid_8676116761112",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余2-仓山-小宇"
+        },
+        {
+          "wxid": "wxid_1twwbj7zv5mi22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "zhhw0606",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "愤怒の小蛮"
+        },
+        {
+          "wxid": "yaoxin728126",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_xvn8wtngy4vm12",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "业余-我的道"
+        },
+        {
+          "wxid": "xiaochouyu1024",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_vwlqyuz533z622",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_jll7n0xr4soq22",
+          "talk": 11,
+          "attend": 0,
+          "create": 1,
+          "active": 61,
+          "wxname": "Gogogo"
+        },
+        {
+          "wxid": "landy53988",
+          "talk": 20,
+          "attend": 0,
+          "create": 1,
+          "active": 70,
+          "wxname": "✨LANDY_ICY"
+        },
+        {
+          "wxid": "wxid_d70wid2g09an11",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "zgr666",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余0级"
+        },
+        {
+          "wxid": "wxid_8vq8wcllmgir22",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业业余-台江-王艳兰"
+        },
+        {
+          "wxid": "wxid_rit37npa67ek21",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余 2  白湖亭 笃曦"
+        },
+        {
+          "wxid": "wxid_bf9ou3untvb511",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "私语"
+        },
+        {
+          "wxid": "wxid_qtdvd3g1o2dr21",
+          "talk": 32,
+          "attend": 1,
+          "create": 0,
+          "active": 52,
+          "wxname": "林耀"
+        },
+        {
+          "wxid": "wxid_ugzobc5i50io22",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "怂怂的豆子"
+        },
+        {
+          "wxid": "wxid_shdsabwzw0vz22",
+          "talk": 4,
+          "attend": 0,
+          "create": 1,
+          "active": 54,
+          "wxname": "Joan"
+        },
+        {
+          "wxid": "wxid_e3nsd5zb1mqp22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_fzbk5qxkhkj421",
+          "talk": 5,
+          "attend": 0,
+          "create": 1,
+          "active": 55,
+          "wxname": "业余1-省体市体五四北-李柏"
+        },
+        {
+          "wxid": "wxid_rgkh18hn9jr822",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余1洋人西"
+        },
+        {
+          "wxid": "qq594785715",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_xmetl0iyaqpt22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_pvg92dha0m9721",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "Gordo"
+        },
+        {
+          "wxid": "wxid_2691586916312",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "Miacis123",
+          "talk": 13,
+          "attend": 0,
+          "create": 0,
+          "active": 13,
+          "wxname": "业余0.1-鼓楼-馒头"
+        },
+        {
+          "wxid": "wxid_zddzk9x6sq7l22",
+          "talk": 5,
+          "attend": 0,
+          "create": 0,
+          "active": 5,
+          "wxname": "业务1-台江-望岳"
+        },
+        {
+          "wxid": "xiaopangjiu",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_sn5hbbl74gk322",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "chenyun123654",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_533sj0i45e9411",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_km5j08thir5612",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "G5164991",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_zrzhit22dxbs22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "W415616866",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_pbji0ew7bg6t12",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余0.5-鼓楼-五哥"
+        },
+        {
+          "wxid": "ouya1027",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_gy6r9iz58zq521",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_mfvwdfrd96g921",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余1级-台江-小张"
+        },
+        {
+          "wxid": "wxid_fwit7ie1cam522",
+          "talk": 4,
+          "attend": 0,
+          "create": 1,
+          "active": 54,
+          "wxname": "业余1–福州—土豆"
+        },
+        {
+          "wxid": "wxid_cxkplvw6d20d22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_kdcgneq5pu7i22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_3fluc9ovxbq222",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "哈嘿"
+        },
+        {
+          "wxid": "wxid_jozt6atx7udb22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "lala495097",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_jpax65wf46no22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_m5kmnmvnrzpz21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "zh0591",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "zhengshan33",
+          "talk": 11,
+          "attend": 0,
+          "create": 1,
+          "active": 61,
+          "wxname": "3'  ."
+        },
+        {
+          "wxid": "wxid_hxfi5b20pkdo21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "zbwing",
+          "talk": 4,
+          "attend": 0,
+          "create": 1,
+          "active": 54,
+          "wxname": "业余2-台江-零六"
+        },
+        {
+          "wxid": "wxid_3oghhxp8c9tn22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_bh19g6oif3cp12",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_xipe5tot7ftu22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_9laa2nbwv05d12",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余2-金山-麦当劳"
+        },
+        {
+          "wxid": "wxid_pf2uaqmvucsr12",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "null"
+        },
+        {
+          "wxid": "wxid_aumjbv6wcn6242",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "QQ70774125",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_xpwgkfhdx0au12",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_ped8w5kph5ie22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_762lgshvtukc22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "zhuyunshan2378",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "业余0.5—晋安"
+        },
+        {
+          "wxid": "QUAN-0327",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_0nwlbmenl9fk22",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "Kenny"
+        },
+        {
+          "wxid": "wxid_ypcb7tri0ilw21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "chenxy_24",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "业余0.9 仓山 你定？"
+        },
+        {
+          "wxid": "wxid_4d7ugojyoezq22",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "陈不烦"
+        },
+        {
+          "wxid": "wxid_njlqmjy3ik3u21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_odx07etkic1m22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_lfo717bwkzsx22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_tyr6x5e1ko9n32",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_o06a5o4qzfno12",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "yy9339133",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "Elsa"
+        },
+        {
+          "wxid": "wxid_orr1wkpco19b22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_z6ffim7p1p9022",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "茶杯骰子"
+        },
+        {
+          "wxid": "wxid_q5oz39m84p6922",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_nytvwfv6ytoh21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "CYC996097223",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "qq694396596",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_gjg9o5smmrnk22",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "玛玛哈哈"
+        },
+        {
+          "wxid": "wxid_4gleavlg06ad22",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "业余2   仓山   江江"
+        },
+        {
+          "wxid": "wxid_hvz2l4jedc9h22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "LF891665711",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_fuqsl0q6wr3b12",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "绪绪"
+        },
+        {
+          "wxid": "wxid_892nefcrkivz41",
+          "talk": 6,
+          "attend": 1,
+          "create": 0,
+          "active": 26,
+          "wxname": "化一"
+        },
+        {
+          "wxid": "linfen1991",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_kqlu2sor264721",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_40jvu85clyc222",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余3-仓山-蔡菜"
+        },
+        {
+          "wxid": "Wu2011zw",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余3，仓山，伟"
+        },
+        {
+          "wxid": "wxid_50onxghkt1tu12",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_e6t1m7zo1sf331",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_cnih1ylt9reu22",
+          "talk": 3,
+          "attend": 0,
+          "create": 0,
+          "active": 3,
+          "wxname": "业余8-晋安-央央"
+        },
+        {
+          "wxid": "YDH225616",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_0uctvkyu07ib12",
+          "talk": 3,
+          "attend": 0,
+          "create": 1,
+          "active": 53,
+          "wxname": "LHX"
+        },
+        {
+          "wxid": "wxid_xewmqzos7t1w21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_wybihqounh7f22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_cpuclk6f6fag21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_66wtombsr4tk22",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余1-台江-小杨"
+        },
+        {
+          "wxid": "chengsong271",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_8259262598212",
+          "talk": 23,
+          "attend": 1,
+          "create": 0,
+          "active": 43,
+          "wxname": "菜鸟0.5级-仓山-小王"
+        },
+        {
+          "wxid": "wxid_zbqv7rya530k22",
+          "talk": 4,
+          "attend": 0,
+          "create": 1,
+          "active": 54,
+          "wxname": "WHT"
+        },
+        {
+          "wxid": "wxid_gdfwsarropbz22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_l5ic3v2jh4n512",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_2797117971112",
+          "talk": 3,
+          "attend": 1,
+          "create": 0,
+          "active": 23,
+          "wxname": "业余3.5-鼓楼-雷"
+        },
+        {
+          "wxid": "bandao2006",
+          "talk": 10,
+          "attend": 0,
+          "create": 0,
+          "active": 10,
+          "wxname": "Zzz..."
+        },
+        {
+          "wxid": "wxid_ge2m8i3xzg9a22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_3g0jy6cq8ma312",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "Kira"
+        },
+        {
+          "wxid": "wxid_ksox1morzn7822",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_bnf82s8jel6w22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_q67txzzz87kg21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_3uqku7nu9yxk12",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_wqx69t2az60k22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "lingenting",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "bbb_dan",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_pkqboqrii31322",
+          "talk": 10,
+          "attend": 0,
+          "create": 0,
+          "active": 10,
+          "wxname": "叶-Sin"
+        },
+        {
+          "wxid": "Y13509306645",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_kd8yuqfe4rgz22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_1jr3gvwfzf4k11",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_83i65e9l3pih22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_429gdmbmwmat12",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_7tghtlwlmeil21",
+          "talk": 35,
+          "attend": 0,
+          "create": 1,
+          "active": 85,
+          "wxname": "NiKo"
+        },
+        {
+          "wxid": "mengchao5730",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_kilunzoivbp22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "kim1118chul",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_ysjono5bsiwb22",
+          "talk": 2,
+          "attend": 1,
+          "create": 0,
+          "active": 22,
+          "wxname": "业余2-晋安-木头"
+        },
+        {
+          "wxid": "wxid_mqfkf39i2vkt22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_yvru4691e9e722",
+          "talk": 5,
+          "attend": 0,
+          "create": 0,
+          "active": 5,
+          "wxname": "业余1-晋安-林工"
+        },
+        {
+          "wxid": "wxid_pnrowoaes7w522",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_d8dift514pfd22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "z649875156",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "Jh340019587",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余3 台江 小江"
+        },
+        {
+          "wxid": "wxid_gxksyhlaj8rf22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_2cynmunz5dg612",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_d0zjq9w55bea22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_r643ihp7gdcs22",
+          "talk": 13,
+          "attend": 0,
+          "create": 0,
+          "active": 13,
+          "wxname": "业余_2.5  _福州_鑫"
+        },
+        {
+          "wxid": "wxw92729",
+          "talk": 10,
+          "attend": 0,
+          "create": 1,
+          "active": 60,
+          "wxname": "尉"
+        },
+        {
+          "wxid": "lubin78543621",
+          "talk": 5,
+          "attend": 1,
+          "create": 0,
+          "active": 25,
+          "wxname": "业余2级-仓山-史努比"
+        },
+        {
+          "wxid": "wxid_y6p7yewn3x4a22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_p2h1yyk54uf322",
+          "talk": 5,
+          "attend": 1,
+          "create": 0,
+          "active": 25,
+          "wxname": "业余1-鼓楼-橄榄树"
+        },
+        {
+          "wxid": "an296755114",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_h0v6a4d89b1g12",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "jll1993123",
+          "talk": 3,
+          "attend": 0,
+          "create": 0,
+          "active": 3,
+          "wxname": "Jerevon"
+        },
+        {
+          "wxid": "wxid_humo47dqeza912",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "Fiona"
+        },
+        {
+          "wxid": "wxid_hzpxecrpxdn422",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "鼓楼-业余0.5级-啊丞"
+        },
+        {
+          "wxid": "wxid_t5czxry5dgnb22",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "null"
+        },
+        {
+          "wxid": "wxid_6ue2t4m4aqri22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_946sltqxnhee22",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "张建乐（乐今朝）"
+        },
+        {
+          "wxid": "wxid_g6a18906v8pj12",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "hq892354652",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业务0+长乐+Qq"
+        },
+        {
+          "wxid": "wxid_n02p3yhn0rz622",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_hkfobeu4giyg11",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余3.14159万三"
+        },
+        {
+          "wxid": "lwwilss",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "merryniuniu2012",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "xiaojuan801",
+          "talk": 9,
+          "attend": 0,
+          "create": 0,
+          "active": 9,
+          "wxname": "Mr.Liaoooo"
+        },
+        {
+          "wxid": "wxid_tt6gd2ws5tud22",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余1—台江 mogul"
+        },
+        {
+          "wxid": "wxid_v1giyof2fovz21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_cfus9unpcuyt22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "XZ280366669",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_p6wlein0i7xo12",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "deplore-greatly",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "Run"
+        },
+        {
+          "wxid": "wxid_6851218513511",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "€仰望星空$"
+        },
+        {
+          "wxid": "wxid_vtbz1an3b35x12",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_tul9ol79wzf622",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余1-台江-香菜"
+        },
+        {
+          "wxid": "wxid_l5019o1nnkh822",
+          "talk": 6,
+          "attend": 0,
+          "create": 0,
+          "active": 6,
+          "wxname": "业余2-晋安-橘子"
+        },
+        {
+          "wxid": "wxid_ur4i4ej7wbi822",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余0-奥体-11"
+        },
+        {
+          "wxid": "wxid_x3aqo2jhh0xo22",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业务：台江—辰陌"
+        },
+        {
+          "wxid": "wxid_bi24lm2mebcp22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_ksngtqb4sw3o22",
+          "talk": 49,
+          "attend": 0,
+          "create": 0,
+          "active": 49,
+          "wxname": "业余0级-福州-zsy"
+        },
+        {
+          "wxid": "yeh15260921419",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "zuiguozuiguo553603",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_k66scx5rwbe122",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "控制"
+        },
+        {
+          "wxid": "wxid_o5w80ttn5vfq22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "axx_726",
+          "talk": 6,
+          "attend": 1,
+          "create": 0,
+          "active": 26,
+          "wxname": "业余0_斗门小孙"
+        },
+        {
+          "wxid": "wxid_ofg1jx1zena021",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "向阳"
+        },
+        {
+          "wxid": "wxid_gpbwu4wggndb21",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余03-晋安-轻尘"
+        },
+        {
+          "wxid": "wxid_zvrwvr1beujt22",
+          "talk": 43,
+          "attend": 0,
+          "create": 0,
+          "active": 43,
+          "wxname": "业余0.5级 鼓楼"
+        },
+        {
+          "wxid": "wxid_wkeayxb8cnjd22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "ryojjs",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "业余0-仓山-👻"
+        },
+        {
+          "wxid": "wxid_5c1pe90fkrcb22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_uh2vfb58b5s422",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "qha920328",
+          "talk": 20,
+          "attend": 0,
+          "create": 1,
+          "active": 70,
+          "wxname": "业余1-晋安-布朗熊"
+        },
+        {
+          "wxid": "g1150316262",
+          "talk": 14,
+          "attend": 0,
+          "create": 0,
+          "active": 14,
+          "wxname": "业余2仓山区非著名起床困难户"
+        },
+        {
+          "wxid": "wxid_irp5fih2pm0q21",
+          "talk": 8,
+          "attend": 0,
+          "create": 1,
+          "active": 58,
+          "wxname": "业余1-晋安-娟娟"
+        },
+        {
+          "wxid": "wxid_020kc1abkyvl22",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "业余3-台江-初见"
+        },
+        {
+          "wxid": "wxid_ly16lsldtzda21",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余2，闽侯，大雄"
+        },
+        {
+          "wxid": "wxid_p9u9u3kj131322",
+          "talk": 7,
+          "attend": 0,
+          "create": 0,
+          "active": 7,
+          "wxname": "业余0林春蕊"
+        },
+        {
+          "wxid": "wxid_q11qr289bm3l21",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "好西"
+        },
+        {
+          "wxid": "wxid_3mt51lx9roiu12",
+          "talk": 3,
+          "attend": 0,
+          "create": 0,
+          "active": 3,
+          "wxname": "业余0吴学林"
+        },
+        {
+          "wxid": "wxid_ny13u4621n7f21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "YK19940806",
+          "talk": 4,
+          "attend": 1,
+          "create": 0,
+          "active": 24,
+          "wxname": "业余1级-奥体-康康"
+        },
+        {
+          "wxid": "wxid_ker99kkicjka22",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "愤怒的小猪"
+        },
+        {
+          "wxid": "fuxiao_in",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "xiaokexiaoke",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "weixin1109196970",
+          "talk": 10,
+          "attend": 0,
+          "create": 1,
+          "active": 60,
+          "wxname": "业余0级-台江-苗子"
+        },
+        {
+          "wxid": "peony124001713",
+          "talk": 11,
+          "attend": 0,
+          "create": 1,
+          "active": 61,
+          "wxname": "业余1.7级-鼓楼-欧阳稻稻"
+        },
+        {
+          "wxid": "zf_309032132",
+          "talk": 5,
+          "attend": 0,
+          "create": 1,
+          "active": 55,
+          "wxname": "业余2级-仓山-阿昏"
+        },
+        {
+          "wxid": "nengguang001",
+          "talk": 2,
+          "attend": 0,
+          "create": 1,
+          "active": 52,
+          "wxname": "业余1-金山-龙猫"
+        },
+        {
+          "wxid": "chenjinwei08",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "csj19931019",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "云间゛"
+        },
+        {
+          "wxid": "yh1711",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "wxid_j808xo7wu43o22",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "流苏"
+        },
+        {
+          "wxid": "wxid_iu63g3efqbnb22",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "业余2-晋安-笑笑"
+        },
+        {
+          "wxid": "wxid_pjax5ynlkr4h21",
+          "talk": 5,
+          "attend": 1,
+          "create": 0,
+          "active": 25,
+          "wxname": "wu"
+        },
+        {
+          "wxid": "L778329489",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "chenyu1120",
+          "talk": 3,
+          "attend": 0,
+          "create": 0,
+          "active": 3,
+          "wxname": "陈富婆。"
+        },
+        {
+          "wxid": "wxid_1t0d5jgrivq522",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "Jay"
+        },
+        {
+          "wxid": "aicsmxr",
+          "talk": 3,
+          "attend": 0,
+          "create": 0,
+          "active": 3,
+          "wxname": "Aaron"
+        },
+        {
+          "wxid": "wxid_w5egpu4qd6g622",
+          "talk": 14,
+          "attend": 1,
+          "create": 1,
+          "active": 84,
+          "wxname": "柯青"
+        },
+        {
+          "wxid": "wxid_nahmfttnbeyk21",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0
+        },
+        {
+          "wxid": "ljwsophie12",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "Autumn~"
+        },
+        {
+          "wxid": "wxid_kg4dc2zebc2i22",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "wxname": "憨憨的世界"
+        },
+        {
+          "wxid": "wxid_ewjb3urpl50t21",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 1,
+          "wxname": "vila"
+        },
+        {
+          "wxid": "ququ088695",
+          "wxname": "郭强🌤",
+          "talk": 6,
+          "attend": 0,
+          "create": 0,
+          "active": 6,
+          "isnew": true
+        },
+        {
+          "wxid": "wxid_05400yeccu0a41",
+          "wxname": "-小曼",
+          "talk": 7,
+          "attend": 0,
+          "create": 1,
+          "active": 57,
+          "isnew": true
+        },
+        {
+          "wxid": "wxid_qi8par1vctuj31",
+          "wxname": "🐟",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "isnew": true
+        },
+        {
+          "wxid": "wxid_8be6b0q73gox22",
+          "wxname": "虾米郎",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 0,
+          "isnew": true
+        },
+        {
+          "wxid": "wxid_j9rqfbqs1c3y21",
+          "wxname": "条",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 0,
+          "isnew": true
+        },
+        {
+          "wxid": "rainbow_55_41",
+          "wxname": "LING🌸",
+          "talk": 2,
+          "attend": 0,
+          "create": 0,
+          "active": 2,
+          "isnew": true
+        },
+        {
+          "wxid": "wxid_gyhcb283d5se22",
+          "wxname": "",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 0,
+          "isnew": true
+        },
+        {
+          "wxid": "wxid_9txa2fmepy8r21",
+          "wxname": "",
+          "talk": 1,
+          "attend": 0,
+          "create": 0,
+          "active": 0,
+          "isnew": true
+        }
+      ]
+    },
+    {
+      "room": "测试群",
+      "talks": [
+        {
+          "wxid": "wxid_zqptk9a2wmwo21",
+          "talk": 29,
+          "attend": 0,
+          "create": 5,
+          "active": 279,
+          "wxname": "林汀"
+        },
+        {
+          "wxid": "wxid_7iamaquxeufz22",
+          "talk": 0,
+          "attend": 0,
+          "create": 0,
+          "active": 0,
+          "wxname": "罗伯特"
+        },
+        {
+          "wxid": "chenjunh_8512",
+          "wxname": "业余3-台江-胖子",
+          "talk": 6,
+          "attend": 0,
+          "create": 0,
+          "active": 6,
+          "isnew": true
+        }
+      ],
+      "ownerId": "",
+      "adminIdList": []
+    }
+  ],
+  "activitys": [
+    {
+      "room": "福州羽毛球健身群",
+      "acts": [
+        "双打场子，全靠自觉，6小时内收咕咕费\n地点：555号场\n时间：4.5（周三） 22-22点\n上限10人\n\n1.  。\n2. 小吴\n3. 大淑（女）\n4. 饲料\n5. 何帆",
+        "\n地点：555号场\n时间：4月20（周三） 22-22点\n上限2人\n\n1.张三\n2. 小吴\n3. 大淑（女）\n4. 饲料\n5. 何帆"
+      ]
+    },
+    {
+      "room": "测试群",
+      "acts": [
+        "\n地点：555号场\n时间：4月20（周三） 22-22点\n上限2人\n\n1.张三\n2. 小吴\n3. 大淑（女）\n4. 饲料\n5. 何帆",
+        "\n地点：555号场\n时间：4月20（周三） 22-22点\n上限2人\n\n1.林汀\n2. 小吴\n3. 大淑（女）\n4. 饲料\n5. 何帆",
+        "\n地点：555号场\n时间：4月20日（周三） 22-22点\n上限2人\n\n1.林汀\n2. 罗伯特\n3. 大淑（女）\n4. 饲料\n5. 何帆\n#我要收款13.30元\n"
+      ]
+    }
+  ],
+  "pays": [
+    {
+      "room": "测试群",
+      "pays": [
+        {
+          "title": "5月8日\n1. 林汀",
+          "receiver": {
+            "wxid": "wxid_zqptk9a2wmwo21",
+            "talk": 29,
+            "attend": 0,
+            "create": 5,
+            "active": 279,
+            "wxname": "林汀"
+          },
+          "attends": [
+            {
+              "wxname": "林汀",
+              "wxid": "wxid_zqptk9a2wmwo21",
+              "exist": 1,
+              "pay": 1
+            },
+            {
+              "wxname": "罗伯特",
+              "wxid": "wxid_7iamaquxeufz22",
+              "exist": 1
+            },
+            {
+              "wxname": "橙子",
+              "err": "(无此人,修改名称重试)"
+            }
+          ],
+          "desc": "日期：5月8日  周六下午  金山繁星\n15场  16:00",
+          "amount": "0.2"
+        },
+        {
+          "title": "5月7日\n1. 林汀",
+          "receiver": {
+            "wxid": "wxid_zqptk9a2wmwo21",
+            "talk": 29,
+            "attend": 0,
+            "create": 5,
+            "active": 279,
+            "wxname": "林汀"
+          },
+          "attends": [
+            {
+              "wxname": "林汀",
+              "wxid": "wxid_zqptk9a2wmwo21",
+              "exist": 1,
+              "pay": 1
+            },
+            {
+              "wxname": "罗伯特",
+              "wxid": "wxid_7iamaquxeufz22",
+              "exist": 1
+            },
+            {
+              "wxname": "橙子",
+              "err": "(无此人,修改名称重试)"
+            }
+          ],
+          "desc": "日期：5月7日  周六下午  金山繁星\n15场  16:00",
+          "amount": "0.2"
+        },
+        {
+          "title": "5月6日\n1. 林汀",
+          "receiver": {
+            "wxid": "wxid_zqptk9a2wmwo21",
+            "talk": 29,
+            "attend": 0,
+            "create": 5,
+            "active": 279,
+            "wxname": "林汀"
+          },
+          "attends": [
+            {
+              "wxname": "林汀",
+              "wxid": "wxid_zqptk9a2wmwo21",
+              "exist": 1,
+              "pay": 1
+            },
+            {
+              "wxname": "罗伯特",
+              "wxid": "wxid_7iamaquxeufz22",
+              "exist": 1
+            },
+            {
+              "wxname": "橙子",
+              "err": "(无此人,修改名称重试)"
+            }
+          ],
+          "desc": "日期：5月6日  周六下午  金山繁星\n15场  16:00",
+          "amount": "0.2"
+        },
+        {
+          "title": "5月4日\n1. 林汀",
+          "receiver": {
+            "wxid": "wxid_zqptk9a2wmwo21",
+            "talk": 29,
+            "attend": 0,
+            "create": 5,
+            "active": 279,
+            "wxname": "林汀"
+          },
+          "attends": [
+            {
+              "wxname": "林汀",
+              "wxid": "wxid_zqptk9a2wmwo21",
+              "exist": 1,
+              "pay": 1
+            },
+            {
+              "wxname": "罗伯特",
+              "wxid": "wxid_7iamaquxeufz22",
+              "exist": 1
+            },
+            {
+              "wxname": "橙子",
+              "err": "(无此人,修改名称重试)"
+            }
+          ],
+          "desc": "日期：5月4日  周六下午  金山繁星\n15场  16:00",
+          "amount": "0.2"
+        }
+      ]
+    }
+  ],
+  "transfers": [
+    {
+      "room": "测试群",
+      "trans": [
+        {
+          "wxid": "abc",
+          "wxname": "张三",
+          "payNum": 3
+        }
+      ]
+    }
+  ]
+}

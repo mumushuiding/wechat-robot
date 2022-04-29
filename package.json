@@ -1,0 +1,78 @@
+{
+  "name": "wechat-robot",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "type": "module",
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "assert": "^2.0.0",
+    "cjs": "^0.0.11",
+    "dotenv": "^16.0.0",
+    "eslint": "^8.11.0",
+    "ix": "^4.5.2",
+    "lodash-id": "^0.14.1",
+    "lowdb": "^3.0.0",
+    "memory-cache": "^0.2.0",
+    "qrcode-terminal": "^0.12.0",
+    "wechaty-cqrs": "^0.7.5",
+    "wechaty-plugin-contrib": "^1.11.1",
+    "wechaty-puppet-oicq": "^1.10.2",
+    "wechaty-puppet-walnut": "^1.11.6",
+    "wechaty-puppet-wechat": "^1.18.1",
+    "wechaty-puppet-wechat4u": "~1.11.1",
+    "wechaty-puppet-whatsapp": "~1.11.2",
+    "wechaty-puppet-xp": "^1.10.20"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "@chatie/eslint-config": "^1.0.4",
+    "@chatie/git-scripts": "^0.6.2",
+    "@chatie/tsconfig": "^4.6.3",
+    "check-node-version": "^4.2.1",
+    "is-pr": "^2.0.0",
+    "wechaty-puppet-mock": "^1.18.2"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-wechat-robot",
+    "start:js": "node examples/ding-dong-bot.js",
+    "start:walnut": "cross-env WECHATY_LOG=verbose WECHATY_PUPPET=wechaty-puppet-walnut npm start",
+    "start:service": "cross-env WECHATY_LOG=verbose WECHATY_PUPPET=wechaty-puppet-service npm start",
+    "start:wechat:web": "cross-env WECHATY_LOG=verbose WECHATY_PUPPET=wechaty-puppet-wechat npm start",
+    "start:wechat:padlocal": "cross-env WECHATY_LOG=verbose WECHATY_PUPPET=wechaty-puppet-padlocal npm start",
+    "start:whatsapp:web": "cross-env WECHATY_LOG=verbose WECHATY_PUPPET=wechaty-puppet-whatsapp npm start",
+    "serve": "cd frontend && npm run serve",
+    "stop": "egg-scripts stop --title=egg-server-wechat-robot",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT",
+  "git": {
+    "scripts": {
+      "pre-push": "npx git-scripts-pre-push"
+    }
+  }
+}

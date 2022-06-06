@@ -1,8 +1,10 @@
 import lodash from 'lodash';
 import { findRoomInfos } from './room.js';
-import { getOrganizer, isAct, getShortName} from './utils.js';
+import { getOrganizer, isAct, getShortName, getMiniprogramPublisherId } from './utils.js';
 import { saveAct } from './activity.js';
 import { startPayRequire, sbPayed, sbTransfer } from './pay.js';
+import { saveMiniProgramPublicId } from './utils/ordersrc.js';
+import { findPersonFindAct } from './utils/inform.js';
 import cache from 'memory-cache';
 const NUMBER_1 = 80;
 export async function statistic({ msg, contact, room, db, bot }) {
@@ -10,7 +12,7 @@ export async function statistic({ msg, contact, room, db, bot }) {
   const x = msg.text();
   switch (msg.type()) {
     case bot.Message.Type.Text:
-      if (/#我要收款/g.test(x)) {
+      if (/#收款/g.test(x)) {
         // 用户发起收款
         startPay({ msg, db, bot, roomname: room, contact });
       } else if (/转账你无需接收|转账待你接收/g.test(x)) {
@@ -25,7 +27,9 @@ export async function statistic({ msg, contact, room, db, bot }) {
         if (isAct(x)) {
           informActivityOwner({ wxid: contact.id, msg, db, collection: 'divers', roomname: room, bot });
           saveAct({ room, db, actinfo: msg.text() });
-          isActivity({ contact, msg });
+          isActivity({ contact, msg, roomname: room });
+          // 通知找场的人
+          informPersonFindActs({ db, roomname: room, msg, bot, transfer: contact.id });
         }
       }
       if (msg.text() === 1 || msg.text() === 0 || msg.text() === '1' || msg.text() === '0') {
@@ -38,18 +42,38 @@ export async function statistic({ msg, contact, room, db, bot }) {
       break;
     case bot.Message.Type.MiniProgram:
       if (/<sourcedisplayname>分级接龙工具<\/sourcedisplayname>/i.test(msg.text())) {
-        console.log('转发了分级接龙小程序');
-        isActivity({ contact, msg });
+        // console.log('转发了分级接龙小程序');
+        // isActivity({ contact, msg });
+        isMiniProgram({ contact, msg, roomname: room });
+        // 通知找场的人
+        informPersonFindActs({ db, roomname: room, msg, bot, transfer: contact.id });
       }
       break;
     case bot.Message.Type.Unknown:
-      if (/^".+"邀请".+"加入了群聊$/g.test(msg.text())) {
+      if (/^".+"邀请".+"加入了群聊$/g.test(x)) {
         onRoomJoin({ msg, db, bot, room });
       }
       break;
     default:
       break;
   }
+}
+async function informPersonFindActs({ db, roomname, msg, bot, transfer }) {
+  const wxids = findPersonFindAct({ db, roomname });
+  if (wxids.length === 0) return;
+  const cs = [];
+  wxids.forEach(id => {
+    // console.log(`转发人${transfer}，通知人${id}`);
+    if (id !== transfer) {
+      const c = bot.Contact.load(id);
+      cs.push(c);
+    }
+  });
+  if (cs.length === 0) return;
+  for (let i = 0; i < 10; i++) {
+    cs.push('');
+  }
+  msg.room().say `有人转发活动了，快报名吧！\n回复 【#不找场】 将停止通知\n ${cs[0]} ${cs[1]}${cs[2]} ${cs[3]}${cs[4]}${cs[5]} ${cs[6]}${cs[7]} ${cs[8]}${cs[9]}`;
 }
 function checkTransfer({ contact, text, msg, room, db, bot }) {
   if (!contact || !text) return;
@@ -93,8 +117,8 @@ async function startTransfer({ msg, contact, db, room }) {
     text += `\n回复:【0${i}】  确认转给:${getShortName(users[i].wxname)}`;
     transfer.push([ users[i], titles[i] ]);
   }
-  cache.put(`${contact.id}#${room}#activity#transfer`, transfer, 60000);
-  text += '\n\n30秒内回复有效';
+  cache.put(`${contact.id}#${room}#activity#transfer`, transfer, 60000 * 10);
+  text += '\n\n60秒内回复有效';
   msg.room().say(text, contact);
 }
 async function startPay({ msg, db, bot, roomname, contact }) {
@@ -118,11 +142,11 @@ async function startPay({ msg, db, bot, roomname, contact }) {
     const c = bot.Contact.load(id);
     cs.push(c);
   });
-  for (let i = 1; i < 13; i++) {
+  for (let i = 1; i < 27; i++) {
     cs.push('');
   }
   msg.say(payinfo);
-  msg.room().say `应转账:${amount}元,给活动组织者 ${cs[0]} ${cs[1]}${cs[2]} ${cs[3]}${cs[4]}${cs[5]} ${cs[6]}${cs[7]} ${cs[8]}${cs[9]} ${cs[10]}${cs[11]} ${cs[12]}`;
+  msg.room().say `转账${amount}元给【${org}】\n\n转账后根据提示回复\n\n 末尾标记【款收齐】结束收款 \n\n ${cs[0]} ${cs[1]}${cs[2]} ${cs[3]}${cs[4]}${cs[5]} ${cs[6]}${cs[7]} ${cs[8]}${cs[9]} ${cs[10]}${cs[11]} ${cs[12]}${cs[13]} ${cs[14]}${cs[15]} ${cs[16]}${cs[17]}${cs[18]} ${cs[19]}${cs[20]} ${cs[21]}${cs[22]} ${cs[23]}${cs[24]} ${cs[25]}`;
 
 }
 // room 为群聊名称
@@ -203,69 +227,78 @@ async function _activeInc({ room, db, bot, contact, isCreate, msg }) {
   db.write();
   msg.say(`${talker.wxname} 组织:${talker.create},参与:${talker.attend},活跃度:${talker.active}`);
 }
-function _hasAttend({ wxid, wxname, text, msg }) {
-  console.log({ wxid, wxname });
-  // 判断是否是小程序，是分级接龙小程序返回true
-  if (/<sourcedisplayname>分级接龙工具<\/sourcedisplayname>/i.test(text)) {
-    console.log('转发了小程序，算参加');
-    return true;
-  }
+function _hasAttend({ wxid, wxname, text, msg, roomname }) {
+  if (!text) return false;
+  console.log('判断是否参与活动');
+  const key = `${roomname}#${wxid}#activity`;
   let hasAttend = false;
   if (!wxname) return false;
   const arr = [];
-  const x = wxname.match(/^(.{1,8})?[-, ,_,－,—,—,～,~,/,,,,，].{2,4}[-, ,_,－,—,—,～,~,/,,,,，](.{1,8})/i);
-  if (x) {
-    arr.push(x[x.length - 1]);
-  }
-  arr.push(wxname);
+  const short = getShortName(wxname);
+  arr.push(short);
+  if (short !== wxname) arr.push(wxname);
   hasAttend = arr.some(n => text.includes(n));
-  console.log('hasAttend:' + hasAttend);
   if (!hasAttend) {
-    cache.del(`${wxid}#activity`);
-    cache.del(`${wxid}#activity#forward`);
-    msg.say(`接龙中没看到 ${arr.join('或')},建议用以上提及名称报名`);
+    cache.del(key);
+    cache.del(`${key}#forward`);
+    msg.say(`接龙中没看到【${arr.join('】或【')}】,建议用以上提及名称报名`);
   }
   return hasAttend;
 }
-// 转让场地 transferfield
-async function transferfield({ contact, msg, room, db, bot }) {
-  if (!contact) return;
-  const f = cache.get(`${contact.id}#transferfield`);
-  if (f === null) return;
-  switch (msg.text()) {
-    case '#c0': // 要场地
-
-      break;
-    case '#c1': // 要转让
-      break;
-    default:
-      break;
+async function isMiniProgram({ contact, msg, roomname }) {
+  const key = `${roomname}#${contact.id}#activity`;
+  const f = cache.get(key + '#forward');
+  const room = msg.room();
+  if (f) {
+    // room.say('6小时内只统计一次!!', contact);
+    console.log('----------24小时只统计一次---------');
+    return;
   }
-  cache.del(`${contact.id}#transferfield`);
+  cache.put(key, getMiniprogramPublisherId(msg.text()), 120000);
+  cache.put(key + '#forward', true, 3600 * 48 * 1000);
+  room.say('\n\n    参与者回复: 0\n    发起者回复: 1\n\n(60秒内回复有效)', contact);
 }
 async function activityInc({ contact, msg, room, db, bot }) {
   if (!contact) return;
-  const f = cache.get(`${contact.id}#activity`);
-  if (f === null) return;
-  // 判断是否真的报名了
-  if (!_hasAttend({ wxid: contact.id, wxname: contact.name(), text: f, msg })) return;
+  const key = `${room}#${contact.id}#activity`;
+  const f = cache.get(key);
+  console.log(`活动内容：${f}`);
+  if (!f) return;
+  if (f.includes('publisherId')) { // 是否是小程序的内容
+    console.log('----------是小程序---------');
+    if (!saveMiniProgramPublicId({ db, roomname: room, actinfo: f })) {
+      msg.say('活动已经统计过了');
+      cache.del(key);
+      cache.del(key + '#forward');
+      return;
+    }
+    // 通知管理员
+  } else {
+    // 是文字接龙
+    if (!_hasAttend({ wxid: contact.id, wxname: contact.name(), text: f, msg, roomname: room })) {
+      cache.del(key);
+      cache.del(key + '#forward');
+      return;
+    }
+  }
   let isCreate = false;
   if (msg.text() === '1') {
     msg.say('组织了一场活动，赞!');
     isCreate = true;
   }
   _activeInc({ room, db, bot, contact, isCreate, msg });
-  cache.del(`${contact.id}#activity`);
+  cache.del(key);
 }
-async function isActivity({ contact, msg }) {
-  const f = cache.get(`${contact.id}#activity#forward`);
+async function isActivity({ contact, msg, roomname }) {
+  const key = `${roomname}#${contact.id}#activity`;
+  const f = cache.get(key + '#forward');
   const room = msg.room();
   if (f) {
     // room.say('6小时内只统计一次!!', contact);
     return;
   }
-  cache.put(`${contact.id}#activity`, msg.text(), 120000);
-  cache.put(`${contact.id}#activity#forward`, true, 3600 * 24 * 1000);
+  cache.put(key, msg.text(), 120000);
+  cache.put(key + '#forward', true, 3600 * 24 * 1000);
   room.say('\n\n    参与者回复: 0\n    发起者回复: 1\n\n(60秒内回复有效)', contact);
 }
 export async function talkInc({ wxid, wxname, room, db, bot }) {
@@ -372,6 +405,4 @@ async function informActivityOwner({ wxid, msg, db, collection, roomname, bot })
       }
     }
   }
-  // 从数据库查询可以用户，如果找到多个，找到一个
-
 }

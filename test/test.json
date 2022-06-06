@@ -1,2 +1,88 @@
-Message#Text[🗣Contact<业余3-台江-林汀>@👥Room<测试群>]         [转账你无需接收]
-09:00:06 INFO StarterBot Message#Text[🗣Contact<业余2.7-仓山区-条>@👥Room<测试群>]       [已收款]
+{
+  "OpenTemplateId": "5f766fed2c753e845e4b0e523f242bfc_1652344105",
+  "OpenSpName": "\u9886\u5bfc-\u5bf9\u53e3\u4f1a\u8ba1-\u4f1a\u8ba1\u4e3b\u4efb-\u603b\u7f16",
+  "ApprovalNodes": {
+    "ApprovalNode": [
+      {
+        "NodeStatus": 1,
+        "Items": {
+          "Item": [
+            {
+              "ItemName": "\u90ed\u60e0\u5cf0",
+              "ItemParty": 37,
+              "ItemImage": "http://wework.qpic.cn/bizmail/nZoseSuIofCyiadpial7xZHzy0Weov1uibpEqNfMke0SbkdLFghS3Ycsg/",
+              "ItemUserId": "guohuifeng",
+              "ItemStatus": 1,
+              "ItemSpeech": "",
+              "ItemOpTime": 0
+            }
+          ]
+        },
+        "NodeAttr": 1,
+        "NodeType": 3
+      },
+      {
+        "NodeStatus": 1,
+        "Items": {
+          "Item": [
+            {
+              "ItemName": "\u738b\u5b87",
+              "ItemParty": 10,
+              "ItemImage": "http://wework.qpic.cn/bizmail/S2Mldia8ubJjkt5LPxaswpicZ2pG9LfYF6WhbISEoh9ibyC1Yo2EymvFg/0",
+              "ItemUserId": "wangyu",
+              "ItemStatus": 1,
+              "ItemSpeech": "",
+              "ItemOpTime": 0
+            }
+          ]
+        },
+        "NodeAttr": 1,
+        "NodeType": 2
+      },
+      {
+        "NodeStatus": 1,
+        "Items": {
+          "Item": [
+            {
+              "ItemName": "\u51af\u4e1c\u5347",
+              "ItemParty": 10,
+              "ItemImage": "http://wework.qpic.cn/bizmail/buJ8qGYORs5LFqfw0qkQ1A63bkkwgNjoXQnX1QdhMERiaMekO3e9c7g/0",
+              "ItemUserId": "fendongsheng",
+              "ItemStatus": 1,
+              "ItemSpeech": "",
+              "ItemOpTime": 0
+            }
+          ]
+        },
+        "NodeAttr": 1,
+        "NodeType": 3
+      },
+      {
+        "NodeStatus": 1,
+        "Items": {
+          "Item": [
+            {
+              "ItemName": "\u8c22\u8054\u7075",
+              "ItemParty": 31,
+              "ItemImage": "http://wework.qpic.cn/bizmail/ovLvrt5XfAhJn5ISQJpxIOH237ic1hb4fibv538JAWsJLxibNM8KRq9iaw/0",
+              "ItemUserId": "xielianling",
+              "ItemStatus": 1,
+              "ItemSpeech": "",
+              "ItemOpTime": 0
+            }
+          ]
+        },
+        "NodeAttr": null,
+        "NodeType": 5
+      }
+    ]
+  },
+  "NotifyNodes": { "NotifyNode": [] },
+  "NotifyAttr": 2
+}
+
+
+其它渠道付款
+
+查询未付款
+

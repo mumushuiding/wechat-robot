@@ -1,0 +1,8 @@
+{
+  "approval": [
+    { "type": 3, "attr": 2, "level": 1, "id": "" },
+    { "type": 2, "attr": 1, "id": 42, "tag": "\u4eba\u4e8b\u7ecf\u529e" },
+    { "type": 3, "attr": 2, "level": 2, "id": "" }
+  ],
+  "notify": []
+}

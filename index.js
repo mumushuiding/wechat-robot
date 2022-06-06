@@ -1,4 +1,4 @@
-import { onMessage, informAct } from './libs/msg.js';
+import { onMessage, informAct, informAttends, informPays, informOrder, refreshMembers } from './libs/msg.js';
 import lodash from 'lodash';
 import qrcodeTerminal from 'qrcode-terminal';
 import {
@@ -56,14 +56,40 @@ function onLogin(user) {
 async function onMsg(msg) {
   log.info('StarterBot', msg.toString());
   if (msg.text() === 'ding') {
-    await msg.say('dong');
+    await msg.say('dong6');
   }
   onMessage(bot, msg, db);
 }
-function cronTask() {
-  const arr = [ '福州羽毛球健身群', '测试群' ];
-  arr.forEach(a => {
+// function cronTask() {
+//   console.log(`${new Date()} INFO 定时任务------------------`);
+// }
+function _infoAttends() {
+  const groups = [ '福州羽毛球健身群', '测试群' ];
+  // const groups = [ '测试群' ];
+  groups.forEach(a => {
     informAct({ bot, db, roomname: a });
+    setTimeout(() => {
+      informAttends({ bot, roomname: a, db });
+    }, 10 * 60 * 1000);
+  });
+}
+function _infoPays() {
+  const groups = [ '福州羽毛球健身群', '测试群' ];
+  // const groups = [ '测试群' ];
+  groups.forEach(a => {
+    informPays({ bot, db, roomname: a });
+  });
+}
+function _informOrder() {
+  const groups = [ '测试群', '市体订场互助群' ];
+  groups.forEach(a => {
+    informOrder({ bot, db, roomname: a }); // 提醒签到
+  });
+}
+function _refreshMembers() {
+  const groups = [ '测试群', '市体订场互助群' ];
+  groups.forEach(a => {
+    refreshMembers({ bot, db, roomname: a }); // 提醒签到
   });
 }
 bot.on('scan', onScan);
@@ -74,9 +100,13 @@ bot.start()
   .then(async () => {
     log.info('StarterBot', 'Starter Bot Started.');
     setTimeout(() => {
-      cronTask();
+      // _infoAttends();
+      // _refreshMembers();
     }, 15000);
-    setInterval(cronTask, 1 * 3600 * 1000);
+    setInterval(_infoAttends, 1 * 3600 * 1000);
+    setInterval(_infoPays, 0.5 * 3600 * 1000);
+    setInterval(_informOrder, 10 * 60 * 1000);
+    setInterval(_refreshMembers, 24 * 3600 * 1000);
   })
   .catch(e => log.error('StarterBot', e));
 

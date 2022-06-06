@@ -1,11 +1,14 @@
 import lodash from 'lodash';
 import { getActContent, getDate } from './utils.js';
+export const ACTCOLLECTION = 'activitys';
 /**
  * saveAct 缓存活动信息
  * @param {*} room 是群名称 actinfo 活动内容
  */
 export function saveAct({ room, db, actinfo }) {
   if (!room || room === '' || !actinfo || actinfo === '') return;
+  const date = getDate(actinfo);
+  if (!date) return;
   const b = getActContent(actinfo);
   if (!b) return;
   const activitys = db.data.activitys || [];
@@ -28,8 +31,8 @@ export function saveAct({ room, db, actinfo }) {
   } else {
     roomobj.acts.push(actinfo);
   }
-  // 判断是否超过5个
-  if (roomobj.acts.length > 5) roomobj.acts.splice(0, 1);
+  // 判断是否超过20个
+  if (roomobj.acts.length > 20) roomobj.acts.splice(0, 1);
   db.data.activitys = activitys;
   db.write();
 }
@@ -44,8 +47,15 @@ export function getActs({ room, db }) {
   if (!roomobj) {
     return [];
   }
-  return lodash.chain(roomobj.acts).take(5)
-    .value();
+  const now = new Date();
+  const arr = [];
+  roomobj.acts.forEach(act => {
+    const date = getDate(act);
+    if (date && date.getTime() >= now.getTime()) {
+      arr.push(act);
+    }
+  });
+  return arr;
 }
 /**
  * hasActFinish 判断活动是否过期

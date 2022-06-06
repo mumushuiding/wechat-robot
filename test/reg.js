@@ -1,18 +1,4 @@
-const x = `日期：4月19号
-地点：省体副官8号场跟12号
-时间：14:30-17:30
-1.go
-2.勇
-3.容
-4.小恐龙
-5.元宵
-6.元宵1
-7.元宵2
-8.小张同学
-9.richard
-10
-注意️10人满，6人双打，4人单打，
-注意事项：dddd`;
+const x = '(已付款)张 三 ';
 // const y = '业余2.0级-来电-冰冰冰冰';
 // const arr = [ y ];
 // const a = y.match(/^(.{1,8})?(级)?[-, ,_,－,—,—,～,~,/].{2,4}[-, ,_,－,—,—,～,~,/](.{1,8})/i);
@@ -21,8 +7,11 @@ const x = `日期：4月19号
 // console.log(`接龙中没看到 ${arr.join('、')} ,你似乎没报名`);
 // console.log(hasAttend);
 // 匹配组织的人
-const a = x.match(/(?<=\n1[ ,.,、]{1,5})(.*?)(?=\n2[., ,、]{1})/i);
-console.log(a);
+const now = new Date();
+console.log(now);
+console.log(now.toISOString());
+// const a = x.match(/(?<=\n1[ ,.,、]{1,5})(.*?)(?=\n2[., ,、]{1})/i);
+// console.log(a);
 
 // 匹配活动及发起人
 // const regexp = /^(.*?)(?=1[、, ,]{1,5})/;

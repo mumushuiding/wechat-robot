@@ -16,18 +16,17 @@ export function getJsonFromFilePath(path) {
 export function getFilePath(path) {
   return join(__dirname, path);
 }
-// 获取接龙<publisherId>(.+)</publisherId>
-export function getMiniprogramPublisherId(str) {
+// 获取接龙<pagepath>(.+)</pagepath>
+export function getMiniprogramPagepath(str) {
+  console.log('-------小程序内容:\n' + str);
   if (!str) return null;
-  const a = str.match(/<publisherId>(.+)<\/publisherId>/g);
-  let result;
-  if (a && a.length > 0) {
-    result = a[0];
-  }
+  let result = str;
+  const a = str.match(/<pagepath>.+<\/pagepath>/g);
+  if (a && a.length > 0) result = a[0];
   return result;
 }
-export function isMiniprogramPublisherId(str) {
-  if (/<publisherId>.+<\/publisherId>/g.test(str)) return true;
+export function isMiniprogramPagepath(str) {
+  if (/<pagepath>.+<\/pagepath>/g.test(str)) return true;
   return false;
 }
 // getOrganizer 匹配出组织者
@@ -115,6 +114,37 @@ export function getDate(str) {
   now.setHours(h, min, 0);
   return now;
 }
+export function getEndDate(str) {
+  if (!str) return null;
+  const a = str.match(/[0-9]{1,2}月[0-9]{1,2}[日,号]/g);
+  let datestr = null;
+  if (a && a.length > 0) datestr = a[0];
+  if (!datestr) return datestr;
+  const marr = datestr.match(/(([1-9]{1})?[0-9]{1})(?=月)/g);
+  if (!marr) return null;
+  const m = parseInt(marr[0]) - 1;
+  const darr = datestr.match(/(?<=月)([0-9]{1,2})(?=[日,号])/g);
+  if (!darr) return null;
+  const d = parseInt(darr[0]);
+  const h = _getEndHour(str);
+  if (h === -1) return null;
+  const min = _getEndMin(str);
+  const now = new Date();
+  now.setMonth(m);
+  now.setDate(d);
+  now.setHours(h, min, 0);
+  return now;
+}
+function _getEndMin(str) {
+  const minarr = str.match(/(?<=([1-9]{1})?[0-9]{1}[:,：]{1}[0-9]{2}[-, ,_,－,—,～,~,/,到]{1,4}[0-9]{1,2}[:,：]{1})([0-9]{2})/g);
+  if (!minarr) return 0;
+  return parseInt(minarr[0]);
+}
+function _getEndHour(str) {
+  const harr = str.match(/(?<=[0-9]{1,2}[:,：]{1}[0-9]{2}[-, ,_,－,—,～,~,/,到]{1,4})[0-9]{1,2}(?=[:,：]{1}[0-9]{2})|(?<=[0-9]{1,2}[-, ,_,－,—,～,~,/,到])[0-9]{1,2}(?=点)/g);
+  if (!harr) return -1;
+  return parseInt(harr[0]);
+}
 function _getStartMin(str) {
   const minarr = str.match(/(?<=([1-9]{1})?[0-9]{1}[:,：]{1})([0-9]{2})(?=[-, ,_,－,—,～,~,/,到]{1,4}[0-9]{1,2}[:,：]{1}[0-9]{2})/g);
   if (!minarr) return 0;
@@ -168,6 +198,13 @@ function _getAttendNumber(str) {
     x = a.length;
   }
   return x;
+}
+// 看起来像接龙
+export function looklikeAct(str) {
+  if (!str) return false;
+  const a = str.match(/\n[0-9]{1,2}[ ,.,:,：,、]{1,4}/g);
+  if (a && a.length > 3) return true;
+  return false;
 }
 // getAttendPerson 获取参与人员列表
 export function getAttendPerson(str) {

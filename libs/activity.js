@@ -1,5 +1,5 @@
 import lodash from 'lodash';
-import { getActContent, getDate } from './utils.js';
+import { getActContent, getDate, getEndDate } from './utils.js';
 export const ACTCOLLECTION = 'activitys';
 /**
  * saveAct 缓存活动信息
@@ -53,6 +53,27 @@ export function getActs({ room, db }) {
     const date = getDate(act);
     if (date && date.getTime() >= now.getTime()) {
       arr.push(act);
+    }
+  });
+  return arr;
+}
+// 获取一小时内结束的活动
+export function getFinishActsInAhour({ room, db }) {
+  if (!room || room === '' || !db) return [];
+  const activitys = db.data.activitys || [];
+  const roomobj = lodash.chain(activitys).find({ room }).value();
+  if (!roomobj) {
+    return [];
+  }
+  const time = new Date().getTime();
+  const arr = [];
+  roomobj.acts.forEach(act => {
+    const date = getEndDate(act);
+    if (date) {
+      const temp = time - date.getTime();
+      if (temp > 0 && temp < 3601 * 1000) {
+        arr.push(act);
+      }
     }
   });
   return arr;

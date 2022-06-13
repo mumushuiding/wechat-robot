@@ -1,44 +1,59 @@
 import lodash from 'lodash';
-import { findRoomInfos } from './room.js';
-import { getOrganizer, isAct, getShortName, getMiniprogramPublisherId } from './utils.js';
+// import { findRoomInfos } from './room.js';
+import { getOrganizer, isAct, getShortName, getMiniprogramPagepath, looklikeAct, isMiniprogramPagepath } from './utils.js';
 import { saveAct } from './activity.js';
 import { startPayRequire, sbPayed, sbTransfer } from './pay.js';
 import { saveMiniProgramPublicId } from './utils/ordersrc.js';
 import { findPersonFindAct } from './utils/inform.js';
+import { activeInc, Degrees } from './utils/active.js';
 import cache from 'memory-cache';
-const NUMBER_1 = 80;
 export async function statistic({ msg, contact, room, db, bot }) {
   // changeAliasNotice({ msg, contact });
   const x = msg.text();
   switch (msg.type()) {
     case bot.Message.Type.Text:
+      if (isAct(x)) {
+        // 是否标名AA
+        if (!(/费用(.){0,4}AA/g.test(x))) {
+          msg.say('本群是非营利群,接龙请标明【费用AA】;回复【#5】 查询活动格式');
+        }
+        informActivityOwner({ wxid: contact.id, msg, db, collection: 'divers', roomname: room, bot });
+        saveAct({ room, db, actinfo: msg.text() });
+        isActivity({ contact, msg, roomname: room });
+        // 通知找场的人
+        informPersonFindActs({ db, roomname: room, msg, bot, transfer: contact.id });
+        return;
+      } else if (looklikeAct(x)) {
+        msg.say('按格式发接龙,会自动帮转;回复【#5】查看接龙格式');
+        return;
+      }
+      if (x === '1' || x === '0') {
+        // 活跃度更新
+        let num = Degrees.attend;
+        if (x === '1') num = Degrees.create;
+        _activityInc({ contact, msg, room, db, bot, num });
+        return;
+      }
       if (/#收款/g.test(x)) {
         // 用户发起收款
         startPay({ msg, db, bot, roomname: room, contact });
-      } else if (/转账你无需接收|转账待你接收/g.test(x)) {
+        return;
+      }
+      if (/转账你无需接收|转账待你接收/g.test(x)) {
         console.log('-----------转款---------');
         if (!contact) {
           msg.say('无法识别用户');
           return;
         }
         startTransfer({ msg, contact, db, room });
-      } else {
-        talkInc({ wxid: contact.id, wxname: contact.name(), room, db, bot });
-        if (isAct(x)) {
-          informActivityOwner({ wxid: contact.id, msg, db, collection: 'divers', roomname: room, bot });
-          saveAct({ room, db, actinfo: msg.text() });
-          isActivity({ contact, msg, roomname: room });
-          // 通知找场的人
-          informPersonFindActs({ db, roomname: room, msg, bot, transfer: contact.id });
-        }
-      }
-      if (msg.text() === 1 || msg.text() === 0 || msg.text() === '1' || msg.text() === '0') {
-        // 活跃度更新
-        activityInc({ contact, msg, room, db, bot });
+        return;
       }
       if (/^0[0-9]{1,2}$/g.test(x)) {
         checkTransfer({ contact, text: x, msg, room, db, bot });
+        return;
       }
+      // 发言加1
+      activeInc({ room, db, bot, wxid: contact.id, wxname: contact.name(), num: Degrees.talk });
       break;
     case bot.Message.Type.MiniProgram:
       if (/<sourcedisplayname>分级接龙工具<\/sourcedisplayname>/i.test(msg.text())) {
@@ -50,9 +65,9 @@ export async function statistic({ msg, contact, room, db, bot }) {
       }
       break;
     case bot.Message.Type.Unknown:
-      if (/^".+"邀请".+"加入了群聊$/g.test(x)) {
-        onRoomJoin({ msg, db, bot, room });
-      }
+      // if (/^".+"邀请".+"加入了群聊$/g.test(x)) {
+      //   onRoomJoin({ msg, db, bot, room });
+      // }
       break;
     default:
       break;
@@ -73,7 +88,7 @@ async function informPersonFindActs({ db, roomname, msg, bot, transfer }) {
   for (let i = 0; i < 10; i++) {
     cs.push('');
   }
-  msg.room().say `有人转发活动了，快报名吧！\n回复 【#不找场】 将停止通知\n ${cs[0]} ${cs[1]}${cs[2]} ${cs[3]}${cs[4]}${cs[5]} ${cs[6]}${cs[7]} ${cs[8]}${cs[9]}`;
+  msg.room().say `有人转发活动了，快报名吧！\n ${cs[0]} ${cs[1]}${cs[2]} ${cs[3]}${cs[4]}${cs[5]} ${cs[6]}${cs[7]} ${cs[8]}${cs[9]}\n回复 【#不找场】 将停止通知`;
 }
 function checkTransfer({ contact, text, msg, room, db, bot }) {
   if (!contact || !text) return;
@@ -149,6 +164,7 @@ async function startPay({ msg, db, bot, roomname, contact }) {
   msg.room().say `转账${amount}元给【${org}】\n\n转账后根据提示回复\n\n 末尾标记【款收齐】结束收款 \n\n ${cs[0]} ${cs[1]}${cs[2]} ${cs[3]}${cs[4]}${cs[5]} ${cs[6]}${cs[7]} ${cs[8]}${cs[9]} ${cs[10]}${cs[11]} ${cs[12]}${cs[13]} ${cs[14]}${cs[15]} ${cs[16]}${cs[17]}${cs[18]} ${cs[19]}${cs[20]} ${cs[21]}${cs[22]} ${cs[23]}${cs[24]} ${cs[25]}`;
 
 }
+
 // room 为群聊名称
 async function onRoomJoin({ msg, db, bot, room }) {
   const x = msg.text();
@@ -163,7 +179,7 @@ async function onRoomJoin({ msg, db, bot, room }) {
     invitee = b[1];
   }
   if (invitee.length > 0) {
-    await msg.say(`欢迎 ${invitee} ,请按格式：‘业余2级-晋安-中文昵称’修改群呢称！\n回复：\n\n#1： 可查询等级\n#4： 可查询近期活动\n#5： 查看接龙格式`);
+    await msg.say(`欢迎 ${invitee} ,请按格式：‘业余2级-晋安-中文昵称’修改群呢称！\n回复：\n\n#1: 可查询等级\n#10: 可查询活跃度\n#4: 可查询近期活动\n#5: 查看接龙格式`);
   }
   if (invitor.length > 0) {
     let contact;
@@ -185,52 +201,14 @@ async function onRoomJoin({ msg, db, bot, room }) {
       contact = await bot.Contact.find({ alias: invitor });
     }
     if (contact) {
-      await msg.room().say(`邀请新人,活跃度加${NUMBER_1}`, contact);
-      _activeInc({ room, db, bot, contact, isCreate: true, msg });
+      const res = await activeInc({ room, db, bot, wxid: contact.id, wxname: contact.name(), num: Degrees.invite });
+      if (res) msg.room().say(res, contact);
     }
   }
 }
-
-/**
- * _activeInc
- * @param {*} room 为群聊名称
- */
-async function _activeInc({ room, db, bot, contact, isCreate, msg }) {
-  if (!room || room === '') return;
-  const divers = db.data.divers || [];
-  let roomobj = lodash.chain(divers).find({ room }).value();
-  if (!roomobj) {
-    roomobj = { room, talks: [] };
-    const roominfos = await findRoomInfos({ bot, topic: room });
-    const members = roominfos.memberIdList;
-    roomobj.ownerId = roominfos.ownerId;
-    roomobj.adminIdList = roominfos.adminIdList;
-    members.forEach(v => {
-      roomobj.talks.push({ wxid: v, talk: 0, attend: 0, create: 0, active: 0 });
-    });
-    divers.push(roomobj);
-  }
-  let talker = lodash.chain(roomobj.talks).find({ wxid: contact.id }).value();
-  if (!talker) {
-    talker = { wxid: contact.id, wxname: contact.name(), talk: 0, attend: isCreate ? 0 : 1, create: isCreate ? 1 : 0, active: isCreate ? NUMBER_1 : 20, isnew: true };
-    roomobj.talks.push(talker);
-  } else {
-    if (isCreate) {
-      talker.create += 1;
-    } else {
-      talker.attend += 1;
-    }
-    talker.wxname = contact.name();
-    talker.active = talker.talk * 1 + talker.attend * 20 + talker.create * NUMBER_1;
-  }
-  db.data.divers = divers;
-  db.write();
-  msg.say(`${talker.wxname} 组织:${talker.create},参与:${talker.attend},活跃度:${talker.active}`);
-}
-function _hasAttend({ wxid, wxname, text, msg, roomname }) {
+function _hasAttend({ wxname, text, msg }) {
   if (!text) return false;
-  console.log('判断是否参与活动');
-  const key = `${roomname}#${wxid}#activity`;
+  console.log(`-------判断用户【${wxname}】是否参与活动------`);
   let hasAttend = false;
   if (!wxname) return false;
   const arr = [];
@@ -239,8 +217,6 @@ function _hasAttend({ wxid, wxname, text, msg, roomname }) {
   if (short !== wxname) arr.push(wxname);
   hasAttend = arr.some(n => text.includes(n));
   if (!hasAttend) {
-    cache.del(key);
-    cache.del(`${key}#forward`);
     msg.say(`接龙中没看到【${arr.join('】或【')}】,建议用以上提及名称报名`);
   }
   return hasAttend;
@@ -254,119 +230,9 @@ async function isMiniProgram({ contact, msg, roomname }) {
     console.log('----------24小时只统计一次---------');
     return;
   }
-  cache.put(key, getMiniprogramPublisherId(msg.text()), 120000);
+  cache.put(key, getMiniprogramPagepath(msg.text()), 120000);
   cache.put(key + '#forward', true, 3600 * 48 * 1000);
   room.say('\n\n    参与者回复: 0\n    发起者回复: 1\n\n(60秒内回复有效)', contact);
-}
-async function activityInc({ contact, msg, room, db, bot }) {
-  if (!contact) return;
-  const key = `${room}#${contact.id}#activity`;
-  const f = cache.get(key);
-  console.log(`活动内容：${f}`);
-  if (!f) return;
-  if (f.includes('publisherId')) { // 是否是小程序的内容
-    console.log('----------是小程序---------');
-    if (!saveMiniProgramPublicId({ db, roomname: room, actinfo: f })) {
-      msg.say('活动已经统计过了');
-      cache.del(key);
-      cache.del(key + '#forward');
-      return;
-    }
-    // 通知管理员
-  } else {
-    // 是文字接龙
-    if (!_hasAttend({ wxid: contact.id, wxname: contact.name(), text: f, msg, roomname: room })) {
-      cache.del(key);
-      cache.del(key + '#forward');
-      return;
-    }
-  }
-  let isCreate = false;
-  if (msg.text() === '1') {
-    msg.say('组织了一场活动，赞!');
-    isCreate = true;
-  }
-  _activeInc({ room, db, bot, contact, isCreate, msg });
-  cache.del(key);
-}
-async function isActivity({ contact, msg, roomname }) {
-  const key = `${roomname}#${contact.id}#activity`;
-  const f = cache.get(key + '#forward');
-  const room = msg.room();
-  if (f) {
-    // room.say('6小时内只统计一次!!', contact);
-    return;
-  }
-  cache.put(key, msg.text(), 120000);
-  cache.put(key + '#forward', true, 3600 * 24 * 1000);
-  room.say('\n\n    参与者回复: 0\n    发起者回复: 1\n\n(60秒内回复有效)', contact);
-}
-export async function talkInc({ wxid, wxname, room, db, bot }) {
-  diversTalkInc({ wxid, wxname, room, db, bot }); // 发言次数统计
-}
-// 统计最近的发言次数
-export async function diversTalkInc({ wxid, wxname, room, db, bot }) {
-  if (!room || room === '') return;
-  const divers = db.data.divers || [];
-  let roomobj = lodash.chain(divers).find({ room }).value();
-  if (!roomobj) {
-    roomobj = { room, talks: [] };
-    const roominfos = await findRoomInfos({ bot, topic: room });
-    const members = roominfos.memberIdList || [];
-    roomobj.ownerId = roominfos.ownerId;
-    roomobj.adminIdList = roominfos.adminIdList;
-    members.forEach(v => {
-      roomobj.talks.push({ wxid: v, talk: 0, attend: 0, create: 0, active: 0 });
-    });
-    divers.push(roomobj);
-  }
-  let talker = lodash.chain(roomobj.talks).find({ wxid }).value();
-  if (!talker) {
-    talker = { wxid, wxname, talk: 1, attend: 0, create: 0, active: 0, isnew: true };
-    roomobj.talks.push(talker);
-  } else {
-    talker.talk += 1;
-    talker.wxname = wxname;
-    talker.active = talker.talk * 1 + talker.attend * 20 + talker.create * NUMBER_1;
-  }
-  db.data.divers = divers;
-  db.write();
-}
-export async function clearDivers({ bot, room, db }) {
-  const index = db.chain.get('divers').findIndex({ room }).value();
-  const roominfos = await findRoomInfos({ bot, topic: room });
-  if (!roominfos) {
-    return '群聊[' + room + ']不存在';
-  }
-  const roomobj = { room, talks: [] };
-  const members = roominfos.memberIdList || [];
-  roomobj.ownerId = roominfos.ownerId;
-  roomobj.adminIdList = roominfos.adminIdList;
-  members.forEach(v => {
-    const c = bot.Contact.load(v);
-    roomobj.talks.push({ wxid: v, wxname: c.name(), talk: 0, attend: 0, create: 0, active: 0 });
-  });
-  db.data.divers = db.data.divers || [];
-  if (index === -1) {
-    db.data.divers.push(roomobj);
-  } else {
-    db.data.divers[index] = roomobj;
-  }
-  db.write();
-  return '成员活跃度清零';
-}
-/**
- * talkRank 发言次数排行
- * @param {*} db 数据库，topic 群名称，collection 集合名称
- */
-export async function talkRank({ db, topic, collection, limit, isAsc }) {
-  const room = db.chain.get(collection).find({ room: topic }).value();
-  if (!room || !room.talks) return [];
-  return lodash.chain(room.talks).filter(function(v) {
-    return !v.isnew;
-  }).orderBy('active', isAsc ? 'asc' : 'desc')
-    .take(limit)
-    .value();
 }
 export function findWxidFromDB({ wxname, collection, roomname, db, fuzzy }) {
   const room = db.chain.get(collection).find({ room: roomname }).value();
@@ -379,6 +245,53 @@ export function findWxidFromDB({ wxname, collection, roomname, db, fuzzy }) {
     return cs.map(c => c.wxid);
   }
   return [];
+}
+async function _activityInc({ contact, msg, room, db, bot, num }) {
+  if (!contact) return;
+  const key = `${room}#${contact.id}#activity`;
+  const f = cache.get(key);
+  console.log(`活动内容：${f}`);
+  if (!f) return;
+  if (isMiniprogramPagepath(f)) { // 是否是小程序的内容
+    console.log('----------是小程序---------');
+    if (!saveMiniProgramPublicId({ db, roomname: room, actinfo: f })) {
+      console.log('-----活动已保存-----------');
+      // msg.say('活动已经统计过了');
+      // cache.del(key);
+      // cache.del(key + '#forward');
+      // return;
+    }
+    // 通知管理员
+  } else {
+    // 是文字接龙
+    if (!_hasAttend({ wxid: contact.id, wxname: contact.name(), text: f, msg, roomname: room })) {
+      cache.del(key);
+      cache.del(key + '#forward');
+      return;
+    }
+  }
+  const str = await activeInc({ room, db, bot, wxid: contact.id, wxname: contact.name(), num });
+  if (str) msg.say(str);
+  // let isCreate = false;
+  // if (msg.text() === '1') {
+  //   msg.say('组织了一场活动，赞!');
+  //   isCreate = true;
+  // }
+  // _activeInc({ room, db, bot, contact, isCreate, msg });
+  cache.del(key);
+}
+async function isActivity({ contact, msg, roomname }) {
+  const key = `${roomname}#${contact.id}#activity`;
+  const f = cache.get(key + '#forward');
+  const room = msg.room();
+  if (f) {
+    // room.say('6小时内只统计一次!!', contact);
+    console.log('24小时内只统计一次');
+    return;
+  }
+  cache.put(key, msg.text(), 120000);
+  cache.put(key + '#forward', true, 3600 * 24 * 1000);
+  room.say('\n\n    参与者回复: 0\n    发起者回复: 1\n\n(60秒内回复有效)', contact);
 }
 // 删除指定id的人员
 export async function delDiversInDB({ db, collection, topic, divers }) {
@@ -405,4 +318,113 @@ async function informActivityOwner({ wxid, msg, db, collection, roomname, bot })
       }
     }
   }
+  // else if (wxids.length === 0) {
+  //   msg.say('【' + wxname + '】根据群呢称报名,附赠额外功能');
+  // } else {
+  //   msg.say('名字【' + wxname + '】与他人重复,很多功能使用不了');
+  // }
 }
+/**
+ * _activeInc
+ * @param {*} room 为群聊名称
+ */
+// async function _activeInc({ room, db, bot, contact, isCreate, msg }) {
+//   if (!room || room === '') return;
+//   const divers = db.data.divers || [];
+//   let roomobj = lodash.chain(divers).find({ room }).value();
+//   if (!roomobj) {
+//     roomobj = { room, talks: [] };
+//     const roominfos = await findRoomInfos({ bot, topic: room });
+//     const members = roominfos.memberIdList;
+//     roomobj.ownerId = roominfos.ownerId;
+//     roomobj.adminIdList = roominfos.adminIdList;
+//     members.forEach(v => {
+//       roomobj.talks.push({ wxid: v, talk: 0, attend: 0, create: 0, active: 0 });
+//     });
+//     divers.push(roomobj);
+//   }
+//   let talker = lodash.chain(roomobj.talks).find({ wxid: contact.id }).value();
+//   if (!talker) {
+//     talker = { wxid: contact.id, wxname: contact.name(), talk: 0, attend: isCreate ? 0 : 1, create: isCreate ? 1 : 0, active: isCreate ? NUMBER_1 : 20, isnew: true };
+//     roomobj.talks.push(talker);
+//   } else {
+//     if (isCreate) {
+//       talker.create += 1;
+//     } else {
+//       talker.attend += 1;
+//     }
+//     talker.wxname = contact.name();
+//     talker.active = talker.talk * 1 + talker.attend * 20 + talker.create * NUMBER_1;
+//   }
+//   db.data.divers = divers;
+//   db.write();
+//   msg.say(`${talker.wxname} 组织:${talker.create},参与:${talker.attend},活跃度:${talker.active}`);
+// }
+/**
+ * talkRank 发言次数排行
+ * @param {*} db 数据库，topic 群名称，collection 集合名称
+ */
+// export async function talkRank({ db, topic, collection, limit, isAsc }) {
+//   const room = db.chain.get(collection).find({ room: topic }).value();
+//   if (!room || !room.talks) return [];
+//   return lodash.chain(room.talks).filter(function(v) {
+//     return !v.isnew;
+//   }).orderBy('active', isAsc ? 'asc' : 'desc')
+//     .take(limit)
+//     .value();
+// }
+// export async function talkInc({ wxid, wxname, room, db, bot }) {
+//   diversTalkInc({ wxid, wxname, room, db, bot }); // 发言次数统计
+// }
+// 统计最近的发言次数
+// export async function diversTalkInc({ wxid, wxname, room, db, bot }) {
+//   if (!room || room === '') return;
+//   const divers = db.data.divers || [];
+//   let roomobj = lodash.chain(divers).find({ room }).value();
+//   if (!roomobj) {
+//     roomobj = { room, talks: [] };
+//     const roominfos = await findRoomInfos({ bot, topic: room });
+//     const members = roominfos.memberIdList || [];
+//     roomobj.ownerId = roominfos.ownerId;
+//     roomobj.adminIdList = roominfos.adminIdList;
+//     members.forEach(v => {
+//       roomobj.talks.push({ wxid: v, talk: 0, attend: 0, create: 0, active: 0 });
+//     });
+//     divers.push(roomobj);
+//   }
+//   let talker = lodash.chain(roomobj.talks).find({ wxid }).value();
+//   if (!talker) {
+//     talker = { wxid, wxname, talk: 1, attend: 0, create: 0, active: 0, isnew: true };
+//     roomobj.talks.push(talker);
+//   } else {
+//     talker.talk += 1;
+//     talker.wxname = wxname;
+//     talker.active = talker.talk * 1 + talker.attend * 20 + talker.create * NUMBER_1;
+//   }
+//   db.data.divers = divers;
+//   db.write();
+// }
+// export async function clearDivers({ bot, room, db }) {
+//   const index = db.chain.get('divers').findIndex({ room }).value();
+//   const roominfos = await findRoomInfos({ bot, topic: room });
+//   if (!roominfos) {
+//     return '群聊[' + room + ']不存在';
+//   }
+//   const roomobj = { room, talks: [] };
+//   const members = roominfos.memberIdList || [];
+//   roomobj.ownerId = roominfos.ownerId;
+//   roomobj.adminIdList = roominfos.adminIdList;
+//   members.forEach(v => {
+//     const c = bot.Contact.load(v);
+//     roomobj.talks.push({ wxid: v, wxname: c.name(), talk: 0, attend: 0, create: 0, active: 0 });
+//   });
+//   db.data.divers = db.data.divers || [];
+//   if (index === -1) {
+//     db.data.divers.push(roomobj);
+//   } else {
+//     db.data.divers[index] = roomobj;
+//   }
+//   db.write();
+//   return '成员活跃度清零';
+// }
+

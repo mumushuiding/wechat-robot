@@ -1,7 +1,7 @@
 // 订场群贡献度统计
 import lodash from 'lodash';
 import { findRoomInfos } from './room.js';
-import { getNameFromShare, getMiniprogramPublisherId } from './utils.js';
+import { getNameFromShare, getMiniprogramPagepath } from './utils.js';
 import { findWxidFromDB } from './user.js';
 // import { isAct } from './activity.js';
 import { KICKLIMIT, Assess, saveMiniProgramPublicId, contributeRank, initContribution, delContributerInDB, getMyCon, isOrderTime, addNewMember, Degrees, consToString, Status, resetMembersAndStoreOldData, ifWxnameIsEmpty } from './utils/ordersrc.js';
@@ -123,42 +123,6 @@ async function getContributeLow({ db, roomname, bot, msg }) {
     msg.say('暂无数据');
   }
 }
-// async function clearContribution({ contact, roomname, db, bot, msg }) {
-//   if (contact.id === DEFAULT_OWNERID) {
-//     const t = await _clearContributionDivers({ roomname, collection: CON_TABLE, db, bot });
-//     if (t) {
-//       msg.say(t);
-//       return;
-//     }
-//   } else {
-//     msg.say('没有权限！');
-//     return;
-//   }
-// }
-// 贡献度全部清零
-// async function _clearContributionDivers({ db, collection, roomname, bot }) {
-//   const index = db.chain.get(collection).findIndex({ roomname }).value();
-//   const roominfos = await findRoomInfos({ bot, topic: roomname });
-//   if (!roominfos) {
-//     return '群聊[' + roomname + ']不存在';
-//   }
-//   const roomobj = { roomname, cons: [] };
-//   const members = roominfos.memberIdList || [];
-//   roomobj.ownerId = roominfos.ownerId;
-//   roomobj.adminIdList = roominfos.adminIdList;
-//   members.forEach(wxid => {
-//     const c = bot.Contact.load(wxid);
-//     roomobj.cons.push(initContribution({ wxid, wxname: c.name() }));
-//   });
-//   db.data[collection] = db.data[collection] || [];
-//   if (index === -1) {
-//     db.data[collection].push(roomobj);
-//   } else {
-//     db.data[collection][index] = roomobj;
-//   }
-//   db.write();
-//   return '成员贡献度清零';
-// }
 async function kickContributeLow({ db, msg, roomname, contact, bot }) {
   const room = msg.room();
   const collection = CON_TABLE;
@@ -363,7 +327,7 @@ async function isMiniProgram({ contact, msg, roomname }) {
     console.log('----------24小时只统计一次---------');
     return;
   }
-  cache.put(key, getMiniprogramPublisherId(msg.text()), 120000);
+  cache.put(key, getMiniprogramPagepath(msg.text()), 120000);
   cache.put(key + '#forward', true, 3600 * 48 * 1000);
   room.say('\n\n    发起者回复: 1\n\n(60秒内回复有效)', contact);
 }

@@ -1,12 +1,13 @@
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { saveAct, hasActFinish } from '../libs/activity.js';
-import { isDayTime, hasActFull, isAct, getOrganizer, getShortName, getActContent, getDate, getActDesc, getEast8time, getNameFromShare, isMiniprogramPublisherId } from '../libs/utils.js';
+import { saveAct, hasActFinish, getFinishActsInAhour } from '../libs/activity.js';
+import { getMiniprogramPagepath,looklikeAct, getEndDate, isDayTime, hasActFull, isAct, getOrganizer, getShortName, getActContent, getDate, getActDesc, getEast8time, getNameFromShare, isMiniprogramPagepath } from '../libs/utils.js';
 import { startPayRequire, sbTransfer, sbPayed, getPays } from '../libs/pay.js';
 import { informPays } from '../libs/msg.js';
 import { contributeRank, checkThisSeasonOrder, checkThisMonthOrganize, saveMiniProgramPublicId, getOrderTimeSpan, isOrderTime, delContributerInDB, addNewMember, checkThisWeekRegister, resetMembersAndStoreOldData, ifWxnameIsEmpty } from '../libs/utils/ordersrc.js';
 import { getDateFromVal, getTomorrow, getNow } from '../libs/utils/date.js';
 import { savePersonFindAct, findPersonFindAct, delPersonFindAct  } from '../libs/utils/inform.js';
+import { getActiveRank, activeInc, clearActive } from '../libs/utils/active.js';
 import { LowSync, JSONFileSync } from 'lowdb';
 import lodash from 'lodash';
 
@@ -30,32 +31,199 @@ db.chain = lodash.chain(db.data);
 // console.log(findWxidFromDB({ wxname: '业余3-闽侯-小温', collection: 'divers', roomname: '福州羽毛球健身群', db }));
 // const ids = findWxidFromDB({ wxname: '业余3-闽侯-小温', collection: 'divers', roomname: '福州羽毛球健身群', db });
 // console.log(findAliasIllegal({ collection: 'divers', roomname: '福州羽毛球健身群', db }));
-const y = `5月29日 周天
-场地:省体副馆
-时间:14:30-17:30
-4号
-单4人，双6人，
-亚4AA
-
-1、凛风
-2、
-3、
-4、
-5、
-6`;
+const y = `<?xml version="1.0"?>
+<msg>
+	<appmsg appid="" sdkver="0">
+		<title>06-10 | 福州工人文化宫</title>
+		<des />
+		<username />
+		<action>view</action>
+		<type>33</type>
+		<showtype>0</showtype>
+		<content />
+		<url>https://mp.weixin.qq.com/mp/waerrpage?appid=wx9c78bd45eed84f8a&amp;type=upgrade&amp;upgradetype=3#wechat_redirect</url>
+		<lowurl />
+		<forwardflag>0</forwardflag>
+		<dataurl />
+		<lowdataurl />
+		<contentattr>0</contentattr>
+		<streamvideo>
+			<streamvideourl />
+			<streamvideototaltime>0</streamvideototaltime>
+			<streamvideotitle />
+			<streamvideowording />
+			<streamvideoweburl />
+			<streamvideothumburl />
+			<streamvideoaduxinfo />
+			<streamvideopublishid />
+		</streamvideo>
+		<canvasPageItem>
+			<canvasPageXml><![CDATA[]]></canvasPageXml>
+		</canvasPageItem>
+		<appattach>
+			<attachid />
+			<cdnthumburl>3057020100044b304902010002043e55ad1602034c51e60204acd5903a020462a1bed4042432336665626239662d643034362d343064642d623930652d3465613063356337663731610204011800030201000405004c51e600</cdnthumburl>
+			<cdnthumbmd5>c55eaa4a5a4e5e730acd010857b7a901</cdnthumbmd5>
+			<cdnthumblength>30887</cdnthumblength>
+			<cdnthumbheight>576</cdnthumbheight>
+			<cdnthumbwidth>720</cdnthumbwidth>
+			<cdnthumbaeskey>a8ed48690a5f0ab46790ca787130719e</cdnthumbaeskey>
+			<aeskey>a8ed48690a5f0ab46790ca787130719e</aeskey>
+			<encryver>1</encryver>
+			<fileext />
+			<islargefilemsg>0</islargefilemsg>
+		</appattach>
+		<extinfo />
+		<androidsource>0</androidsource>
+		<sourceusername>gh_75fd2a9d1bef@app</sourceusername>
+		<sourcedisplayname>分级接龙工具</sourcedisplayname>
+		<commenturl />
+		<thumburl />
+		<mediatagname />
+		<messageaction><![CDATA[]]></messageaction>
+		<messageext><![CDATA[]]></messageext>
+		<emoticongift>
+			<packageflag>0</packageflag>
+			<packageid />
+		</emoticongift>
+		<emoticonshared>
+			<packageflag>0</packageflag>
+			<packageid />
+		</emoticonshared>
+		<designershared>
+			<designeruin>0</designeruin>
+			<designername>null</designername>
+			<designerrediretcturl>null</designerrediretcturl>
+		</designershared>
+		<emotionpageshared>
+			<tid>0</tid>
+			<title>null</title>
+			<desc>null</desc>
+			<iconUrl>null</iconUrl>
+			<secondUrl>null</secondUrl>
+			<pageType>0</pageType>
+		</emotionpageshared>
+		<webviewshared>
+			<shareUrlOriginal />
+			<shareUrlOpen />
+			<jsAppId />
+			<pagepath>wxapp_wx9c78bd45eed84f8apages/actinfo/index.html?id=058dfefe62a17c6307f615b66348abe8</pagepath>
+		</webviewshared>
+		<template_id />
+		<md5>c55eaa4a5a4e5e730acd010857b7a901</md5>
+		<weappinfo>
+			<pagepath><![CDATA[pages/actinfo/index.html?id=058dfefe62a17c6307f615b66348abe8]]></pagepath>
+			<username>gh_75fd2a9d1bef@app</username>
+			<appid>wx9c78bd45eed84f8a</appid>
+			<version>41</version>
+			<type>3</type>
+			<weappiconurl><![CDATA[http://wx.qlogo.cn/mmhead/Q3auHgzwzM6Xk0MGqgWf8rPHKhNXw6fBBD8lUYwGX9fKNFxcnCyYKw/96]]></weappiconurl>
+			<shareId><![CDATA[1_wx9c78bd45eed84f8a_cfbd0fe84d51a896da55d6b3d7bf3674_1654768770_0]]></shareId>
+			<sharekey><![CDATA[R04qCadeNkF5slKXwXWWv0sHiadpLGEKyBm_H7mrRUWpC-K6xLWcemkPj8lSeaNBcLIcwjUh3qHZfOVNDE_HZig3JUF4gxkZug3DZ8e8W5Q~]]></sharekey>
+			<appservicetype>0</appservicetype>
+			<secflagforsinglepagemode>0</secflagforsinglepagemode>
+			<videopageinfo>
+				<thumbwidth>720</thumbwidth>
+				<thumbheight>576</thumbheight>
+				<fromopensdk>0</fromopensdk>
+			</videopageinfo>
+		</weappinfo>
+		<statextstr />
+		<musicShareItem>
+			<musicDuration>0</musicDuration>
+		</musicShareItem>
+		<finderLiveProductShare>
+			<finderLiveID />
+			<finderUsername />
+			<finderObjectID />
+			<finderNonceID />
+			<liveStatus />
+			<appId />
+			<pagePath />
+			<productId />
+			<coverUrl />
+			<productTitle />
+			<marketPrice><![CDATA[0]]></marketPrice>
+			<sellingPrice><![CDATA[0]]></sellingPrice>
+			<platformHeadImg />
+			<platformName />
+			<shopWindowId />
+			<flashSalePrice><![CDATA[0]]></flashSalePrice>
+			<flashSaleEndTime><![CDATA[0]]></flashSaleEndTime>
+		</finderLiveProductShare>
+		<finderShopWindowShare>
+			<finderUsername />
+			<avatar />
+			<nickname />
+			<commodityInStockCount />
+			<appId />
+			<path />
+			<appUsername />
+			<query />
+			<liteAppId />
+			<liteAppPath />
+			<liteAppQuery />
+		</finderShopWindowShare>
+		<findernamecard>
+			<username />
+			<avatar><![CDATA[]]></avatar>
+			<nickname />
+			<auth_job />
+			<auth_icon>0</auth_icon>
+			<auth_icon_url />
+		</findernamecard>
+		<finderGuarantee>
+			<scene><![CDATA[0]]></scene>
+		</finderGuarantee>
+		<directshare>0</directshare>
+		<gamecenter>
+			<namecard>
+				<iconUrl />
+				<name />
+				<desc />
+				<tail />
+				<jumpUrl />
+			</namecard>
+		</gamecenter>
+		<patMsg>
+			<chatUser />
+			<records>
+				<recordNum>0</recordNum>
+			</records>
+		</patMsg>
+		<secretmsg>
+			<issecretmsg>0</issecretmsg>
+		</secretmsg>
+		<referfromscene>0</referfromscene>
+		<websearch>
+			<rec_category>0</rec_category>
+			<channelId>0</channelId>
+		</websearch>
+	</appmsg>
+	<fromusername>wxid_zqptk9a2wmwo21</fromusername>
+	<scene>0</scene>
+	<appinfo>
+		<version>1</version>
+		<appname />
+	</appinfo>
+	<commenturl />
+</msg>`;
 const collection = 'contribution';
-const roomname = '市体订场互助群';
-console.log(new Date(1654496900366));
+const room = '测试群';
+// console.log(clearActive({ db, room }));
+// console.log(await activeInc({ db, room, wxid: 'abc', wxname: '系统', num: 80 }));
+console.log(getMiniprogramPagepath(y));
+console.log(isMiniprogramPagepath(y));
 // const d = '2022-05-20 07:10:00';
 // const dn = getDateFromVal('2022-05-20 07:10:00');
 // console.log(dn);
 // console.log(checkThisSeasonOrder({ db, roomname }));
 // console.log(checkThisWeekRegister({ db, roomname }));
 // console.log(checkThisMonthOrganize({ db, roomname }));
-console.log(savePersonFindAct({ db, roomname, wxid: 'abc222' }));
+// console.log(savePersonFindAct({ db, roomname, wxid: 'abc222' }));
 // console.log(delPersonFindAct({ db, roomname, wxid: 'abc222' }));
 // console.log(findPersonFindAct({ db, roomname }));
-// console.log(saveMiniProgramPublicId({ db, roomname, actinfo: '<publisherId>wxapp_wx9c78bd45eed84f8apages/actinfo/index.html?id=f6e08a646284318403b0547c31c392f5</publisherId>'}));
+// console.log(saveMiniProgramPublicId({ db, roomname, actinfo: '<pagepath>wxapp_wx9c78bd45eed84f8apages/actinfo/index.html?id=f6e08a646284318403b0547c31c392f5</pagepath>'}));
 // const res = [{'wxname':'张三'},{'wxname':'李四'}];
 // console.log(`成员：${res.map(s => s.wxname).join('、')}，因贡献度为负已被劝退！`);
 // const b = '" 浮云泪痕"通过扫描"林汀"分享的二维码加入群聊';

@@ -7113,7 +7113,11 @@
           "talk": 182,
           "attend": 1,
           "create": 6,
-          "active": 682
+          "active": 0,
+          "curattend": 0,
+          "curcreate": 0,
+          "curinvite": 0,
+          "curtalk": 0
         },
         {
           "wxid": "wxid_7iamaquxeufz22",
@@ -7121,7 +7125,11 @@
           "talk": 16,
           "attend": 0,
           "create": 0,
-          "active": 16
+          "active": 0,
+          "curattend": 0,
+          "curcreate": 0,
+          "curinvite": 0,
+          "curtalk": 0
         },
         {
           "wxid": "wxid_j9rqfbqs1c3y21",
@@ -7129,8 +7137,28 @@
           "talk": 2,
           "attend": 0,
           "create": 0,
-          "active": 2,
-          "isnew": true
+          "active": 0,
+          "isnew": true,
+          "curattend": 0,
+          "curcreate": 0,
+          "curinvite": 0,
+          "curtalk": 0
+        },
+        {
+          "wxid": "abc",
+          "wxname": "系统",
+          "curtalk": 0,
+          "curattend": 0,
+          "curcreate": 0,
+          "curinvite": 0,
+          "talk": 2,
+          "attend": 1,
+          "create": 1,
+          "invite": 1,
+          "active": 0,
+          "punish": 0,
+          "status": 2,
+          "freshertime": 0
         }
       ],
       "ownerId": "",
@@ -7160,7 +7188,7 @@
         "5月22日     星期日   晚上\n球馆：市体育中心场馆\n场地:   7号场\n时间：19:00~22:30（3.5小时）\n1、咖啡\n2、咖啡+1\n3、是小林呀\n4、清淞\n5、小陈\n6、小陈+1\n六人🈵员，拒绝空降！\n替补：\n1、A\n2、A1\n3、\n——————————————\n场地：3、4号场\n时间：20:30-22:30\n1、a1\n2、a\n3、828\n4、+1\n5、老邵\n6、小薇\n7、小罗\n8、小若\n9、 XT\n10、南起\n11、 水寒\n12、冰冰\n十二人🈵员，拒绝空降！\n1、\n2、\n温馨提示\n[爱心]1.中高风险区域及带⭐号的球友请勿报名】\n[爱心]2.行程码显示未出过福州➕绿码，福州以外的行程码需48小时核酸阴性➕绿码方可进入场馆。\n①、报名球友开场【前一日18点后】退坑，无人替补过时退坑鸽子自费‼‼‼\n②、参与活动属于1自愿行为，在活动期间发生任何意外与组织者无任何关联。",
         "荣都318晚上6到8点在4号场地\n5月21日 限制5人 报名走起\n1.吴歌\n2. \n3.  \n4.\n5.",
         "5月22日 星期日\n【人已满】\n球馆:市体\n场地:6号场\n时间：20:30-22:30\n上限：6人\n1、ZX\n2、陈年\n3、fine\n4、小明\n5.林汀\n6、陈+1",
-        "#接龙5月25日星期三 18:30-20:00咔六羽毛球馆\n单打局限4人 费用aa 鸽子照付 拒绝空降\n1.可政\n2.fine\n3.\n4.\n截止报名"
+        "#接龙6月8日星期三 18:30-09:30咔六羽毛球馆\n单打局限4人 费用aa 鸽子照付 拒绝空降\n1.可政\n2.fine\n3.\n4.\n截止报名"
       ]
     },
     {
@@ -7472,10 +7500,10 @@
     {
       "roomname": "测试群",
       "acts": [
-        "<publisherId>wxapp_wx9c78bd45eed84f8apages/actinfo/index.html?id=f6e08a646284318403b0547c31c392f5</publisherId>",
-        "<publisherId>wxapp_wx9c78bd45eed84f8apages/actinfo/index.html?id=68426679627eec260220281e40eb17a0</publisherId>",
-        "<publisherId>wxapp_wx9c78bd45eed84f8apages/actinfo/index.html?id=6d85a2b96285aeca05458bd374aa0e51</publisherId>",
-        "<publisherId>wxapp_wx9c78bd45eed84f8apages/actinfo/index.html?id=6d85a2b96285afad0545b45f59adbc4f</publisherId>"
+        "<pagepath>wxapp_wx9c78bd45eed84f8apages/actinfo/index.html?id=f6e08a646284318403b0547c31c392f5</pagepath>",
+        "<pagepath>wxapp_wx9c78bd45eed84f8apages/actinfo/index.html?id=68426679627eec260220281e40eb17a0</pagepath>",
+        "<pagepath>wxapp_wx9c78bd45eed84f8apages/actinfo/index.html?id=6d85a2b96285aeca05458bd374aa0e51</pagepath>",
+        "<pagepath>wxapp_wx9c78bd45eed84f8apages/actinfo/index.html?id=6d85a2b96285afad0545b45f59adbc4f</pagepath>"
       ]
     }
   ],
